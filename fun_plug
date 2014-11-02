@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Autostart commands
+
+# Fix for HP-printer
+cat /mnt/HD/HD_a2/Nas_Prog/hp/sihp1020.dl > /dev/lp0
+
+# Link ffmpeg
+ln -s /mnt/HD/HD_a2/Nas_Prog/ffmpeg/bin/ffmpeg /usr/bin/
+ln -s /mnt/HD/HD_a2/Nas_Prog/ffmpeg/lib/libx264.so.130 /lib/
+ln -s /mnt/HD/HD_a2/Nas_Prog/ffmpeg/camrec.sh /usr/bin/
+
+# Link nano
+#ln -s /mnt/HD/HD_a2/Nas_Prog/nano/nano /usr/bin/
+
+# Optware
+mount -obind /mnt/HD/HD_a2/opt/ /opt/
+echo "export PATH=$PATH:/opt/bin:/opt/sbin" >> /home/root/.profile
+/opt/etc/init.d/S* start
+
+# Link for modinfo
+ln -s /mnt/HD/HD_a2/debian/lib/arm-linux-gnueabi/libkmod.so.2 /usr/lib/
+ln -s /mnt/HD/HD_a2/debian/bin/kmod /sbin/modinfo
+
+# Debian chroot
+#mount -o bind /dev/ /mnt/HD/HD_a2/debian/dev/
+#mount -o bind /proc/ /mnt/HD/HD_a2/debian/proc/
+#mount -o bind /sys/ /mnt/HD/HD_a2/debian/sys/
+#chroot /mnt/HD/HD_a2/debian service ssh start
+
+# Rotation logs
+ln -s /mnt/HD/HD_a2/remote_logs/remote-clients.log /var/log/
+ln -s /mnt/HD/HD_a2/Nas_Prog/ffmpeg/log/camrec.log /var/log/
+
+# Mount tovusl nfs-share
+busybox mount -t nfs 10.167.180.98:/mnt/sdb1/torrents /mnt/HD/HD_b2/dlna/nfs/
+
+exit 0
