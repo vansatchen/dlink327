@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+#nfsvers=2 -o nolock
+LD_LIBRARY_PATH=/mnt/HD/HD_a2/some-progs/nfs/libs/ /mnt/HD/HD_a2/some-progs/nfs/libs/mount.nfs # -o nolock,nfsvers=2,udp 10.167.180.98:/mnt/sdb1/torrents /mnt/HD/HD_a2/dlna/nfs/
+exit 0
