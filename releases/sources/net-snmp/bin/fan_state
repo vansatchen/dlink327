@@ -1,0 +1,11 @@
+#!/bin/sh
+
+FANSTATUS=`/usr/sbin/fan_control -g 3|awk '{print $4}'`
+if [ $FANSTATUS == 0 ]; then
+   FANSTATE="OFF"
+else
+   FANSTATE="ON"
+fi
+echo $FANSTATE
+
+exit 0
