@@ -2,6 +2,6 @@
 
 path=$1
 
-/bin/snmpd.sh
+/bin/snmpd -c $path/etc/snmpd.conf
 
 exit 0
