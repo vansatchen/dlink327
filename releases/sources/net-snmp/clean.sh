@@ -1,4 +1,4 @@
 #!/bin/sh
 
 #remove link
-rm -f /bin/snmpd
+rm -f /bin/net-snmpd
