@@ -8,7 +8,7 @@ if ! which ldconfig >/dev/null; then
 fi
 /sbin/ldconfig $path/lib
 
-[ -f `which snmpd` ] && rm -f `which snmpd`
-ln -s $path/sbin/snmpd /bin/
+[ -f `which net-snmpd` ] && rm -f `which net-snmpd`
+ln -s $path/sbin/net-snmpd /bin/
 
 exit 0

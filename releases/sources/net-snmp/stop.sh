@@ -1,6 +1,6 @@
 #!/bin/sh
 
 #stop daemon
-killall snmpd
+killall net-snmpd
 
 exit 0
