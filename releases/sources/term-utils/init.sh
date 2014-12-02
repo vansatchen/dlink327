@@ -9,10 +9,6 @@ fi
 /sbin/ldconfig $path/lib
 
 [ -f `which htop` ] && rm -f `which htop`
-[ -f `which ifstat` ] && rm -f `which ifstat`
-[ -f `which tcpdump` ] && rm -f `which tcpdump`
-[ -f `which trafshow` ] && rm -f `which trafshow`
-[ -f `which iperf` ] && rm -f `which iperf`
-[ -f `which iperf3` ] && rm -f `which iperf3`
+[ -f `which file` ] && rm -f `which file`
 
 exit 0

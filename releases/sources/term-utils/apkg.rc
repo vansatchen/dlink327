@@ -1,5 +1,5 @@
 Package:          term-utils
-Version:          1.0-0
+Version:          1.2-0
 Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         
@@ -10,4 +10,4 @@ InstDepend:
 InstConflict:             
 StartDepend:       
 StartConflict:
-Description:      Some cool utils.
+Description:      Some cool utils for OS.

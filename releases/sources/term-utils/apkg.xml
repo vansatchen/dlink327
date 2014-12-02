@@ -9,24 +9,22 @@
       <center_type>0</center_type>
       <name>term-utils</name>
       <show>term-utils</show>
-      <enable>1</enable>
-      <version>1.0-0</version>
-      <date>20141201</date>
-      <inst_date>12/01/2014</inst_date>
-      <path>/mnt/HD/HD_a2/Nas_Prog/term-utils</path>
-      <ps_name></ps_name>
-      <url></url>
-      <url_port></url_port>
+      <enable>0</enable>
+      <version>1.2-0</version>
+      <date>20141202</date>
+      <inst_date/>
+      <path/>
+      <ps_name/>
+      <url/>
+      <url_port/>
       <apkg_version>2</apkg_version>
       <packager>rusatch</packager>
       <email>rusatch@mail.ru</email>
-      <homepage></homepage>
-      <inst_depend></inst_depend>
-      <inst_conflict></inst_conflict>
-      <start_depend></start_depend>
-      <start_conflict></start_conflict>
-      <description></description>
-      <icon></icon>
+      <homepage/>
+      <inst_depend/>
+      <inst_conflict/>
+      <start_depend/>
+      <start_conflict/>
     </item>
   </apkg>
 </config>
