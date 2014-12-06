@@ -11,5 +11,6 @@
 [ -f /bin/trafshow ] && rm -f /bin/trafshow
 [ -f /bin/iperf ] && rm -f /bin/iperf
 [ -f /bin/iperf3 ] && rm -f /bin/iperf3
+[ -f /bin/nethogs ] && rm -f /bin/nethogs
 
 exit 0

@@ -14,17 +14,18 @@ path=$1
 #[ -f `which iperf` ] && rm -f `which iperf`
 #[ -f `which iperf3` ] && rm -f `which iperf3`
 
-if [ -f /sbin/ldconfig ]; then
-        /sbin/ldconfig $path/lib
-else
-        cp $path/sbin/ldconfig /sbin/
-        /sbin/ldconfig $path/lib
-fi
+#if [ -f /sbin/ldconfig ]; then
+#        /sbin/ldconfig $path/lib
+#else
+#        cp $path/sbin/ldconfig /sbin/
+#        /sbin/ldconfig $path/lib
+#fi
 
 [ -f /bin/ifstat ] && rm -f /bin/ifstat
 [ -f /bin/tcpdump ] && rm -f /bin/tcpdump
 [ -f /bin/trafshow ] && rm -f /bin/trafshow
 [ -f /bin/iperf ] && rm -f /bin/iperf
 [ -f /bin/iperf3 ] && rm -f /bin/iperf3
+[ -f /bin/nethogs ] && rm -f /bin/nethogs
 
 exit 0

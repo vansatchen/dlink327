@@ -7,5 +7,6 @@ rm -f /bin/trafshow
 rm -f /etc/trafshow
 rm -f /bin/iperf
 rm -f /bin/iperf3
+rm -f /bin/nethogs
 
 exit 0
