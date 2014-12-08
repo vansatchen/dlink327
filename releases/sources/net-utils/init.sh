@@ -20,6 +20,15 @@ path=$1
 #        cp $path/sbin/ldconfig /sbin/
 #        /sbin/ldconfig $path/lib
 #fi
+<<<<<<< Updated upstream
+=======
+
+LIBCONS=`ls $path/lib/`
+
+for LIBA in $LIBCONS; do
+        [ ! -f /lib/$LIBA ] && ln -s $path/lib/$LIBA /lib/
+done
+>>>>>>> Stashed changes
 
 [ -f /bin/ifstat ] && rm -f /bin/ifstat
 [ -f /bin/tcpdump ] && rm -f /bin/tcpdump

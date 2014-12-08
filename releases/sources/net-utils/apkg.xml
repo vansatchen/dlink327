@@ -10,8 +10,13 @@
       <name>net-utils</name>
       <show>net-utils</show>
       <enable>0</enable>
+<<<<<<< Updated upstream
       <version>1.1-0</version>
       <date>20141206</date>
+=======
+      <version>1.0-1</version>
+      <date>20141208</date>
+>>>>>>> Stashed changes
       <inst_date/>
       <path/>
       <ps_name/>
