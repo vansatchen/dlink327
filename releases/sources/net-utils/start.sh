@@ -2,12 +2,12 @@
 
 path=$1
 
-if [ -f /sbin/ldconfig ]; then
-        /sbin/ldconfig $path/lib
-else
-        cp $path/sbin/ldconfig /sbin/
-        /sbin/ldconfig $path/lib
-fi
+#if [ -f /sbin/ldconfig ]; then
+#        /sbin/ldconfig $path/lib
+#else
+#        cp $path/sbin/ldconfig /sbin/
+#        /sbin/ldconfig $path/lib
+#fi
 
 ln -s $path/bin/ifstat /bin/
 ln -s $path/bin/tcpdump /bin/
