@@ -1,0 +1,66 @@
+#!/usr/bin/bash
+
+# Some script for record from web-camera with mjpeg.
+# Developed by Nikolay Pavlov aka rusatch. 2014.
+
+#PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/sbin:/opt/bin:/opt/sbin
+#CAMRECPATH=/mnt/HD/HD_a2/Nas_Prog/CamRec
+cd $CAMRECPATH
+if [ ! -f $CAMRECPATH/etc/camrec.conf ]
+then
+  echo "`date` camrec start error: Config doesn't exist" >> $CAMRECPATH/log/camrec.log
+  exit 0
+else
+  source $CAMRECPATH/etc/camrec.conf
+fi
+
+OLDDIRHOUR=`$CAMRECPATH/bin/date --date="$SAVEDATE days ago" +%d-%m-%H.`00
+if [ -d "$DIROUT/$OLDDIRHOUR" ]; then
+        echo "`date` removing old dir $OLDDIRHOUR" >> $CAMRECPATH/log/camrec.log
+        rm -rf $DIROUT/$OLDDIRHOUR
+fi
+
+#testing stream
+#curl -s -I http://192.168.1.52:7776 | grep HTTP/1.0 | awk {'print $2'}
+echo "==========" >> $CAMRECPATH/log/camrec.log
+echo "`date` camrec starting. will finish after $RCDTIME" >> $CAMRECPATH/log/camrec.log
+
+if [[ "$YADIF" == "true" ]]
+then
+  YADIF="-vf yadif"
+else
+  YADIF=""
+fi
+
+if [[ "$TESTSTR" == "true" ]]
+then
+  if [ ! -d $CAMRECPATH/teststr ]; then
+    mkdir $CAMRECPATH/teststr
+  fi
+#  curl --connect-timeout 10 -o ./teststr/snapshot.jpg $VIDEOSRC:$SRCPORT/?action=snapshot &> /dev/null
+#  /usr/bin/ffmpeg -f mjpeg -r 10 -i $VIDEOSRC:$SRCPORT -y -vcodec $VIDEOCDC -r 10 -t 00:00:01 log/test-str.avi
+  $CAMRECPATH/bin/ffmpeg -f mjpeg -r 10 -i $VIDEOSRC:$SRCPORT -y -vcodec $VIDEOCDC -r 10 -t 00:00:01 $CAMRECPATH/log/test-str.avi
+  if [ $? -eq 0 ]; then
+    echo "`date` testing stream is OK" >> $CAMRECPATH/log/camrec.log
+    rm -rf $CAMRECPATH/teststr
+#    rm -f log/test-str.avi
+  else
+    echo "`date` testing stream is FAILED, nothing to record." >> $CAMRECPATH/log/camrec.log
+    if [[ "$SENDEMAIL" == "true" ]]; then
+      echo "You must reboot your ip-camera" | $CAMRECPATH/bin/nail -s "Stream FAILED" $MAILIFFAIL
+    fi
+    rm -rf $CAMRECPATH/teststr
+    exit 1
+  fi
+fi
+
+DIRHOUROUT=`date +%d-%m-%H.%M`
+mkdir -p $DIROUT/$DIRHOUROUT
+#/usr/bin/ffmpeg -f mjpeg -r $VIDEOFPS -i $VIDEOSRC:$SRCPORT -vcodec $VIDEOCDC $YADIF -r $VIDEOFPS -t $RCDTIME $DIROUT/$DIRHOUROUT/camrec.avi & pidof ffmpeg > /var/run/ffmpeg.pid # &> /dev/null
+$CAMRECPATH/bin/ffmpeg -f mjpeg -r $VIDEOFPS -i $VIDEOSRC:$SRCPORT -vcodec $VIDEOCDC $YADIF -r $VIDEOFPS -t $RCDTIME $DIROUT/$DIRHOUROUT/camrec.avi & pidof ffmpeg > /var/run/ffmpeg.pid
+echo "`date` record stoped at `date +%d-%m-%H.%M`" >> $CAMRECPATH/log/camrec.log
+echo "`date` camrec.avi available at $DIROUT/$DIRHOUROUT/$DIRHOUROUT" >> $CAMRECPATH/log/camrec.log
+
+exit 0
+
+
