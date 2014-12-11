@@ -1,0 +1,13 @@
+Package:          CamRec
+Version:          1.0-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    CamRec
+AddonIndexPage:   
+AddonUsedPort:     
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      Record stream from mjpg-camera.
