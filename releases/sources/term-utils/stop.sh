@@ -1,9 +1,9 @@
 #!/bin/sh
 
 #remove links
-#[ -f `which htop` ] && rm -f `which htop`
-#[ -f `which file` ] && rm -f `which file`
 [ -f /bin/htop ] && rm -f /bin/htop
 [ -f /bin/file ] && rm -f /bin/file
+[ -f /bin/showmount ] && rm -f /bin/showmount
+[ -f /sbin/mount.nfs ] && rm -f /sbin/mount.nfs
 
 exit 0

@@ -2,16 +2,6 @@
 
 path=$1
 
-# Check that ldconfig is exists
-#[ -f /sbin/ldconfig ] || cp $path/sbin/ldconfig /sbin/ && /sbin/ldconfig $path/lib
-#/sbin/ldconfig $path/lib
-#if [ -f /sbin/ldconfig ]; then
-#	/sbin/ldconfig $path/lib
-#else
-#	cp $path/sbin/ldconfig /sbin/
-#	/sbin/ldconfig $path/lib
-#fi
-
 LIBCONS=`ls $path/lib/`
 
 for LIBA in $LIBCONS; do
@@ -20,5 +10,7 @@ done
 
 [ -f /bin/htop ] && rm -f /bin/htop
 [ -f /bin/file ] && rm -f /bin/file
+[ -f /bin/showmount ] && rm -f /bin/showmount
+[ -f /sbin/mount.nfs ] && rm -f /sbin/mount.nfs
 
 exit 0
