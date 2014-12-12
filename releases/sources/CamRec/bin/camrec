@@ -14,7 +14,7 @@ else
   source $CAMRECCONF
 fi
 
-OLDDIRHOUR=`$CAMRECPATH/bin/date --date="$SAVEDATE days ago" +%d-%m-%H.`00
+OLDDIRHOUR=`$CAMRECPATH/bin/date --date="$SAVEDATE days ago" +%d-%m-%H.%M`
 if [ -d "$DIROUT/$OLDDIRHOUR" ]; then
         echo "`date` removing old dir $OLDDIRHOUR" >> $CAMRECPATH/log/camrec.log
         rm -rf $DIROUT/$OLDDIRHOUR
