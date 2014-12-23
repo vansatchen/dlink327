@@ -1,0 +1,13 @@
+Package:          Polipo
+Version:          1.1.1-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    Polipo
+AddonIndexPage:   
+AddonUsedPort:     
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      Lightweight forwarding and caching web proxy server.
