@@ -10,13 +10,13 @@
       <name>Polipo</name>
       <show>Polipo</show>
       <enable>0</enable>
-      <version>1.1.1-0</version>
-      <date>20141223</date>
+      <version>1.1.1-1</version>
+      <date>20141224</date>
       <inst_date/>
       <path/>
       <ps_name/>
-      <url/>
-      <url_port/>
+      <url>index.html</url>
+      <url_port>8123</url_port>
       <apkg_version>2</apkg_version>
       <packager>rusatch</packager>
       <email>rusatch@mail.ru</email>
