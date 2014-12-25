@@ -1,11 +1,11 @@
 Package:          Polipo
-Version:          1.1.1-1
+Version:          1.1.1-2
 Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         
 AddonShowName:    Polipo
 AddonIndexPage:   index.html
-AddonUsedPort:    8123
+AddonUsedPort:    80
 InstDepend:
 InstConflict:             
 StartDepend:       
