@@ -1,0 +1,13 @@
+Package:          Rsyslog
+Version:          5.8.13-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    Rsyslog
+AddonIndexPage:   
+AddonUsedPort:     
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      Utility for forwarding log messages in an IP network.
