@@ -1,0 +1,13 @@
+Package:          Loganalyzer-light
+Version:          4.1.1-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    Loganalyzer-light
+AddonIndexPage:   index.php
+AddonUsedPort:    80
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      The LogAnalyzer project provides an easy to use but powerful front end for searching, reviewing and analyzing network event data, including syslog, windows event log and many other event sources.
