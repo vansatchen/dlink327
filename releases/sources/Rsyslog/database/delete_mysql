@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Database maintance script which can be used for rsyslog
 # and phplogcon default database schema.
@@ -25,11 +25,11 @@
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111- 1307, USA.
 
 # Change these variables to reflect your situation.
-database=sqlrsyslogd
+database=Syslog
 dbhost="localhost"
-export table=systemevents
-sqluser=""
-password=""
+export table=SystemEvents
+sqluser="rsyslog"
+password="yBhAUdqCtSRUdegl"
 
 # Location of the mysql daemon:
 mysqld=/usr/bin/mysql

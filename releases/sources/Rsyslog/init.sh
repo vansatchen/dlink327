@@ -8,6 +8,6 @@ path=$1
 [ -f /var/www/Rsyslog ] && rm -f /var/www/Rsyslog || ln -s $path/web /var/www/Rsyslog
 [ -f /var/www/loganalyzer ] && rm -f /var/www/loganalyzer || ln -s $path/loganalyzer /var/www/
 [ -f /mnt/HD_a4/.@database@/Syslog ] && rm -f /mnt/HD_a4/.@database@/Syslog || ln -s $path/database/Syslog /mnt/HD_a4/.@database@/
-mysqlmgr -c -u rsyslog -p yBhAUdqCtSRUdegl -n Syslog
+mysqlmgr -c -u rsyslog -pyBhAUdqCtSRUdegl -n Syslog
 
 exit 0
