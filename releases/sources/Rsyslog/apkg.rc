@@ -1,0 +1,13 @@
+Package:          Rsyslog
+Version:          5.10.1-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    Rsyslog
+AddonIndexPage:   index.html
+AddonUsedPort:    80
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      RSYSLOG is the rocket-fast system for log processing.

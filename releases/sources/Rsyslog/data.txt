@@ -1,0 +1,7 @@
+ln -s /mnt/HD/HD_a2/Nas_Prog/Rsyslog/sbin/ /sbin/
+ln -s /mnt/HD/HD_a2/Nas_Prog/Rsyslog/rsyslog.conf /etc/
+ln -s /mnt/HD/HD_a2/Nas_Prog/Rsyslog/rsyslog.d /etc/
+ln -s /mnt/HD/HD_a2/Nas_Prog/Rsyslog/web /var/www/
+ln -s /mnt/HD/HD_a2/Nas_Prog/Rsyslog/loganalyzer /var/www/
+ln -s /mnt/HD/HD_a2/Nas_Prog/Rsyslog/database/Syslog /mnt/HD_a4/.@database@/
+mysql -u rsyslog -pyBhAUdqCtSRUdegl
