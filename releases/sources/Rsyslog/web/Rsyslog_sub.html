@@ -64,7 +64,7 @@ $(document).ready(function(){
 			<tr><td><hr></td></tr>
 			<tr id="id_Rsyslog_data" class="enable">
 				<td>
-						<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="95%">
+					<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="95%">
 					     <tr>
 							<td colspan="2" height="10">
 								<b>Rsyslog</b> is the rocket-fast system for log processing.<br >
@@ -102,7 +102,7 @@ $(document).ready(function(){
 							</td>
 							<td>&nbsp;</td>
 					 	</tr>
-						</table>
+					</table>
 				</td>	
 			</tr>
 			<tr><td><hr></td></tr>
@@ -119,13 +119,13 @@ $(document).ready(function(){
 			<td>&nbsp;</td>
                         <tr id="id_Rsyslog_configure" class="enable">
 			<td>
-				<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="300"  border="0">
+				<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="95%"  border="0">
 					<tr>
 						<td><div id="date-content"></div>
 						   <script>
 							function show(){
 							   $.ajax({
-							      url: "records.php",
+							      url: "scripts/records.php",
 							      cache: false,
 							      success: function(html){
 						              $("#date-content").html(html);
@@ -145,7 +145,7 @@ $(document).ready(function(){
 							$(document).ready(function(){
 							   $('#But_Cl_DB').click(function() {
 								$.ajax({
-								   url: "cleardb.php",
+								   url: "scripts/cleardb.php",
 								   cache: false,
 								   type: 'Get',
 								   data:{book:1},
@@ -160,6 +160,7 @@ $(document).ready(function(){
 						</td>
 						<td>&nbsp;</td>
 					</tr>
+						<td colspan="2" height="10">For periodic cleaning, please use <a href=http://dlink.vtverdohleb.org.ua/Add-On/current.php?package=vtcron&model=DNS-327L>vtcron</a> by adding record(for example: <i>0 0 10 * * /mnt/HD/HD_a2/Nas_Prog/Rsyslog/web/scripts/cleardb.sh</i>)</td>
 				</table>
 			</td>
                         </tr>
