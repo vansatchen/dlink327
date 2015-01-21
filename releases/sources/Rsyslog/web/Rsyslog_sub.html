@@ -105,6 +105,7 @@ $(document).ready(function(){
 					</table>
 				</td>	
 			</tr>
+<!-- Configure rsyslog -->
 			<tr><td><hr></td></tr>
                         <tr id="id_Rsyslog_icon">
                                 <td>
@@ -120,15 +121,16 @@ $(document).ready(function(){
                         <tr id="id_Rsyslog_configure" class="enable">
 			<td>
 				<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="95%"  border="0">
+                                <td><h1><b>MySQL</b></h1>
 					<tr>
-						<td><div id="date-content"></div>
+						<td><div id="mysql-content"></div>
 						   <script>
 							function show(){
 							   $.ajax({
 							      url: "scripts/records.php",
 							      cache: false,
 							      success: function(html){
-						              $("#date-content").html(html);
+						              $("#mysql-content").html(html);
 						  	      }
 					            	   });
 							}
@@ -160,7 +162,11 @@ $(document).ready(function(){
 						</td>
 						<td>&nbsp;</td>
 					</tr>
-						<td colspan="2" height="10">For periodic cleaning, please use <a href=http://dlink.vtverdohleb.org.ua/Add-On/current.php?package=vtcron&model=DNS-327L>vtcron</a> by adding record(for example: <i>0 0 10 * * /mnt/HD/HD_a2/Nas_Prog/Rsyslog/web/scripts/cleardb.sh</i>)</td>
+					<tr><td colspan="2" height="10">For periodic cleaning, please use <a href=http://dlink.vtverdohleb.org.ua/Add-On/current.php?package=vtcron&model=DNS-327L>vtcron</a> by adding record(for example: <i>0 0 10 * * /mnt/HD/HD_a2/Nas_Prog/Rsyslog/web/scripts/cleardb.sh</i>)</td></tr>
+					<tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr>
+                                </td>
+<!--                                <td><h1><b>Remote logging</b></h1></td> -->
+                                        
 				</table>
 			</td>
                         </tr>
