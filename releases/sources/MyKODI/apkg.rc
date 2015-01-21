@@ -1,0 +1,13 @@
+Package:          MyKODI
+Version:          1.0.0-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    MyKODI
+AddonIndexPage:   index.html
+AddonUsedPort:    80
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      Addon allow use NAS as MySQL-server.

@@ -1,0 +1,20 @@
+<advancedsettings>
+  <videodatabase>
+    <type>mysql</type>
+    <host>192.168.1.159</host>
+    <port>3306</port>
+    <user>kodi</user>
+    <pass>kodipassword</pass>
+  </videodatabase>
+  <musicdatabase>
+    <type>mysql</type>
+    <host>192.168.1.159</host>
+    <port>3306</port>
+    <user>kodi</user>
+    <pass>kodipassword</pass>
+  </musicdatabase>
+  <videolibrary>
+    <importwatchedstate>true</importwatchedstate>
+    <importresumepoint>true</importresumepoint>
+  </videolibrary>
+</advancedsettings>
