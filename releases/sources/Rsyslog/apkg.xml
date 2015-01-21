@@ -9,10 +9,10 @@
       <center_type>0</center_type>
       <name>Rsyslog</name>
       <show>Rsyslog</show>
-      <enable>1</enable>
+      <enable>0</enable>
       <version>5.10.1-0</version>
-      <date>20150119</date>
-      <inst_date>01/19/2015</inst_date>
+      <date>20150121</date>
+      <inst_date>01/21/2015</inst_date>
       <path>/mnt/HD/HD_a2/Nas_Prog/Rsyslog</path>
       <ps_name></ps_name>
       <url>index.html</url>
