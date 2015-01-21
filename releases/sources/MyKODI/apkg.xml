@@ -12,21 +12,19 @@
       <enable>0</enable>
       <version>1.0.0-0</version>
       <date>20150121</date>
-      <inst_date>01/21/2015</inst_date>
-      <path>/mnt/HD/HD_a2/Nas_Prog/MyKODI</path>
-      <ps_name></ps_name>
+      <inst_date/>
+      <path/>
+      <ps_name/>
       <url>index.html</url>
       <url_port>80</url_port>
       <apkg_version>2</apkg_version>
       <packager>rusatch</packager>
       <email>rusatch@mail.ru</email>
-      <homepage></homepage>
-      <inst_depend></inst_depend>
-      <inst_conflict></inst_conflict>
-      <start_depend></start_depend>
-      <start_conflict></start_conflict>
-      <description></description>
-      <icon></icon>
+      <homepage/>
+      <inst_depend/>
+      <inst_conflict/>
+      <start_depend/>
+      <start_conflict/>
     </item>
   </apkg>
 </config>
