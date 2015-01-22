@@ -1,2 +1,0 @@
-mysql -B --disable-column-names -u rsyslog -pyBhAUdqCtSRUdegl -n Syslog -e "select ID from SystemEvents where id=(select max(id) from SystemEvents);"
-mysql -u rsyslog -pyBhAUdqCtSRUdegl -e "truncate table SystemEvents" Syslog

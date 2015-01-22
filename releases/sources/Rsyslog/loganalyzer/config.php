@@ -173,7 +173,7 @@ $CFG['DiskAllowed'][] = "/var/log/";
 $CFG['DefaultSourceID'] = 'Source1';
 
 $CFG['Sources']['Source1']['ID'] = 'Source1';
-$CFG['Sources']['Source1']['Name'] = 'NAS Rsyslog';
+$CFG['Sources']['Source1']['Name'] = 'Nas Rsyslog';
 $CFG['Sources']['Source1']['ViewID'] = 'SYSLOG';
 $CFG['Sources']['Source1']['SourceType'] = SOURCE_DB;
 $CFG['Sources']['Source1']['DBTableType'] = 'monitorware';
