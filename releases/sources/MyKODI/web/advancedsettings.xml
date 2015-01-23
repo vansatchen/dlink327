@@ -1,17 +1,19 @@
 <advancedsettings>
   <videodatabase>
     <type>mysql</type>
-    <host>egigaip</host>
+    <host>192.168.1.159</host>
     <port>3306</port>
     <user>kodi</user>
     <pass>kodipassword</pass>
+    <name>video</name>
   </videodatabase>
   <musicdatabase>
     <type>mysql</type>
-    <host>egigaip</host>
+    <host>192.168.1.159</host>
     <port>3306</port>
     <user>kodi</user>
     <pass>kodipassword</pass>
+    <name>music</name>
   </musicdatabase>
   <videolibrary>
     <importwatchedstate>true</importwatchedstate>

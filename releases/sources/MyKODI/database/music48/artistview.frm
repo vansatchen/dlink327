@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `music48`.`artist`.`idArtist` AS `idArtist`,`music48`.`artist`.`strArtist` AS `strArtist`,`music48`.`artist`.`strMusicBrainzArtistID` AS `strMusicBrainzArtistID`,`music48`.`artist`.`strBorn` AS `strBorn`,`music48`.`artist`.`strFormed` AS `strFormed`,`music48`.`artist`.`strGenres` AS `strGenres`,`music48`.`artist`.`strMoods` AS `strMoods`,`music48`.`artist`.`strStyles` AS `strStyles`,`music48`.`artist`.`strInstruments` AS `strInstruments`,`music48`.`artist`.`strBiography` AS `strBiography`,`music48`.`artist`.`strDied` AS `strDied`,`music48`.`artist`.`strDisbanded` AS `strDisbanded`,`music48`.`artist`.`strYearsActive` AS `strYearsActive`,`music48`.`artist`.`strImage` AS `strImage`,`music48`.`artist`.`strFanart` AS `strFanart` from `music48`.`artist`
+md5=dad6d08960050ec6c99ae004cc814661
+updatable=1
+algorithm=0
+definer_user=kodi
+definer_host=%
+suid=2
+with_check_option=0
+timestamp=2015-01-23 08:57:39
+create-version=1
+source=SELECT  idArtist, strArtist,   strMusicBrainzArtistID,   strBorn, strFormed, strGenres,  strMoods, strStyles, strInstruments,   strBiography, strDied, strDisbanded,   strYearsActive, strImage, strFanart FROM artist
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `music48`.`artist`.`idArtist` AS `idArtist`,`music48`.`artist`.`strArtist` AS `strArtist`,`music48`.`artist`.`strMusicBrainzArtistID` AS `strMusicBrainzArtistID`,`music48`.`artist`.`strBorn` AS `strBorn`,`music48`.`artist`.`strFormed` AS `strFormed`,`music48`.`artist`.`strGenres` AS `strGenres`,`music48`.`artist`.`strMoods` AS `strMoods`,`music48`.`artist`.`strStyles` AS `strStyles`,`music48`.`artist`.`strInstruments` AS `strInstruments`,`music48`.`artist`.`strBiography` AS `strBiography`,`music48`.`artist`.`strDied` AS `strDied`,`music48`.`artist`.`strDisbanded` AS `strDisbanded`,`music48`.`artist`.`strYearsActive` AS `strYearsActive`,`music48`.`artist`.`strImage` AS `strImage`,`music48`.`artist`.`strFanart` AS `strFanart` from `music48`.`artist`
