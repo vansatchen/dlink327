@@ -1,0 +1,2 @@
+# nfs-utils
+./configure --without-statedir --without-statdpath --without-start-statd --without-krb5 --without-gssglue --disable-gss --disable-embedded-perl --without-perl-modules --prefix=/usr/local/nfs-utils/
