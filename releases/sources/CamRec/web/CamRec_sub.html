@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title></title>	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+<link rel="stylesheet" type="text/css" href="/web/css/style.css">
+<link rel="stylesheet" type="text/css" href="/web/css/button_style.css">
+<link rel="stylesheet" type="text/css" href="/web/css/application.css">
+
+<!-- jQuery lib -->
+<script type="text/javascript" src="./js/jQuery/jquery.js?v=1.6.1"></script>
+
+<!-- jScrollPane 
+<link type="text/css" href="./jquery.jscrollpane.css?v=2.0.0" rel="stylesheet" media="all">
+<link type="text/css" href="./jquery.jscrollpane.custom.css?v=2.0.0" rel="stylesheet" media="all">
+<script type="text/javascript" src="./jquery.mousewheel.js?v=2.0.0"></script>
+<script type="text/javascript" src="./jquery.jscrollpane.js?v=2.0.0"></script>
+-->
+<script>
+var sys_time = (new Date()).getTime();
+document.write("<script language=\"javascript\" src=\"\/web\/function\/function.js?id="+sys_time+"\"><\/script>");    
+document.write("<script language=\"javascript\" src=\"\/web\/function\/init.js?id="+sys_time+"\"><\/script>"); 
+document.write("<script language=\"javascript\" src=\"\/web\/function\/web_security.js?id="+sys_time+"\"><\/script>");
+document.write("<script language=\"javascript\" src=\".\/js/CamRec.js?id="+sys_time+"\"><\/script>");	
+</script>
+<script type="text/javascript">
+	
+$(document).ready(function(){
+    get_CamRec_info();
+    //check_button();
+    
+//  jScrollPane_resize("#my_scroll");
+//	$('#my_scroll').jScrollPane({showArrows:true, scrollbarWidth: 15, arrowSize: 16});	
+	
+	$("#But_WEB_IF").click(function(){
+		
+		//if($("#But_WEB_IF").hasClass("button_medium"))
+			goto_url();
+	})	
+});
+</script>
+</head> 
+<body>	
+<FORM name="form1" id="form1" action="#" method=POST>
+
+<div class="osX">
+	<div id="my_scroll">  	
+		
+		
+		<table border="0" width="100%" cellspacing="0" cellpadding="0">
+			<tr id="id_CamRec_icon">
+				<td>
+					<table border="0" width="100%" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="16"><div class="arrow_down" id="CamRec_icon"></div></td>
+							<td><div class="accordion_title">CamRec</div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr><td><hr></td></tr>
+			<tr id="id_CamRec_data" class="enable">
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="95%">
+					     <tr>
+							<td colspan="2" height="10">
+								<b>CamRec</b> is the video recording system, that allows you to save your video-stream from ip-camera.<br >
+								<br >
+							</td>
+						</tr>	
+					    <tr><td colspan="2" height="10">&nbsp;</td></tr>	
+					    <tr>
+					    	<td colspan="2">
+						    	<table cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="300"  border="0">
+								<tr>
+									<td height="22" width="100">Installation Date</td>
+									<td height="22"><div id="my_date"></td>
+								</tr>
+								<tr>
+									<td height="22" width="100">Version</td>
+									<td height="22"><div id="my_version"></td>
+								</tr>
+								<tr>
+									<td height="22" width="100">Installation Path</td>
+									<td height="22"><div id="my_path"></td>
+								</tr>
+								</table>
+							</td>
+						</tr>
+						<tr><td colspan="2" height="10">&nbsp;</td></tr>	
+<!--					   	<tr id="chamber1" style="display">    
+							<td>
+								<div id="But_WEB_IF" class="button_medium">Loganalyzer</div>
+							</td>
+							<td>&nbsp;</td>
+					 	</tr>-->
+					</table>
+				</td>	
+			</tr>
+<!-- Configure camrec -->
+			<tr><td><hr></td></tr>
+                        <tr id="id_CamRec_icon">
+                                <td>
+                                        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                        <td width="16"><div class="arrow_down" id="CamRec_icon"></div></td>
+                                                        <td><div class="accordion_title">Configure CamRec</div></td>
+                                                </tr>
+                                        </table>
+                                </td>
+                        </tr>
+			<td>&nbsp;</td>
+                        <tr id="id_CamRec_configure" class="enable">
+			<td>
+				<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="95%"  border="0">
+<!--                                <td><h1><b>MySQL</b></h1>
+					<tr>
+						<td><div id="mysql-content"></div>
+						   <script>
+							function show(){
+							   $.ajax({
+							      url: "scripts/records.php",
+							      cache: false,
+							      success: function(html){
+						              $("#mysql-content").html(html);
+						  	      }
+					            	   });
+							}
+							$(document).ready(function(){
+							   show();
+							   setInterval('show()',2000);
+							});
+						   </script>
+						</td>
+					</tr>
+					<tr id="chamber2" style="display">
+						<td><div id="But_Cl_DB" class="button_medium">Clear database</div>
+						   <script>
+							$(document).ready(function(){
+							   $('#But_Cl_DB').click(function() {
+								$.ajax({
+								   url: "scripts/cleardb.php",
+								   cache: false,
+								   type: 'Get',
+								   data:{book:1},
+								   success:
+									function(count) {
+									$('#countinfo').html(count+"");
+									}
+								});
+							   });
+							});
+						   </script>
+						</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr><td colspan="2" height="10">For periodic cleaning, please use <a href=http://dlink.vtverdohleb.org.ua/Add-On/current.php?package=vtcron&model=DNS-327L>vtcron</a> by adding record(for example: <i>0 0 10 * * /mnt/HD/HD_a2/Nas_Prog/CamRec/web/scripts/cleardb.sh</i>)</td></tr>
+					<tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr>
+                                </td>-->
+<!--                                <td><h1><b>Remote logging</b></h1></td> -->
+                                        
+				</table>
+			</td>
+                        </tr>
+		</table>
+		
+	</div><!-- end of my_scroll -->
+</div><!-- end of osX -->
+
+</form>	
+</body>
+</html>
