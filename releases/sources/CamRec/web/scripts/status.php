@@ -1,8 +1,15 @@
 <?php 
 
-exec("ps -e | grep ffmpeg | grep -v grep | awk '{print $11,$9,$13,$19,$20}'| sed -e 's#/mnt/HD/HD_b2/smb/cam/##'", $output);
+exec('ps -e | grep ffmpeg | grep -v grep', $outputuptime, $return);
+
+if (!$return) {
+    echo "<b><font color='green'>Running!</font></b>";
+} else {
+    echo "<b><font color='red'>NOT WORKING!!!</font></b>";
+}
+
+exec("ps -e | grep ffmpeg | grep -v grep | awk 'NR==1 {print $11,$9,$13,$19,$20}'| sed -e 's#/mnt/HD/HD_b2/smb/cam/##'", $output);
 foreach ( $output as $output ) {
-    echo "<b>Status:</b>";
     $status_array=explode(" ", $output);
     echo "<ul>";
     echo "<li><b>Host:</b>   $status_array[0] <br />";
@@ -13,8 +20,5 @@ foreach ( $output as $output ) {
     echo "</ul>";
     echo "<br />";
 }
-
-
-
 
 ?>
