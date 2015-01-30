@@ -1,0 +1,15 @@
+Product:	DNS-327
+Package:	Twonky
+Section:	Addon
+Version:	8.0.2-0
+Packager:	rusatch
+Email:		rusatch@mail.ru
+Homepage:	
+Description:	TwonkyMedia server
+AddonShowName:	Twonky
+AddonIndexPage:	index.html
+AddonUsedPort:	9000
+InstDepend:
+InstConflict:
+StartDepend:
+StartConflict:

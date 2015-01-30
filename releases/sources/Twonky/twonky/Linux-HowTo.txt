@@ -1,0 +1,112 @@
+The Twonky UPnP server for Linux is available for different
+machine architectures:
+
+-  Standard PC (x86)
+-  ARM (Advanced Risc Machine) big and little endian 
+-  MIPS (Microprocessor without interlocked pipeline stages)
+   big and little endian
+-  PowerPC (Performance optimization with enhanced RISC Performance Chip)
+-  SH3 (Hitachi SH)
+-  SH4 (Hitachi SH)
+-  SPARC (Scalable Processor ARChitecture)
+
+Your package will consist of the following files:
+
+twonkystarter				Twonky UPnP server starter
+twonkyserver				Twonky UPnP server
+twonkyproxy				Twonky proxy module (to allow access to online resources - my.twonky.com)
+cgi-bin/*				cgi scripts for twonky
+plugins/*				plugins for twonky
+resources/*				resources for twonky
+radio.m3u				Sample playlist
+Linux-HowTo.txt				This file
+TS_7.0_Release_Notes.pdf		Release notes
+Terms of Use*.pdf			Licence Agreement
+twonky.sh				Sample autostart script
+twonkyserver-default.ini		Default configuration for Twonky Server
+
+Copy all files (keeping the directory structure) into your most 
+favourite installation directory, e.g. /usr/local/twonky.
+
+Make sure that the server file, plugins and the cgi scripts have the exe bit set.
+If not, try:
+"chmod 700 twonkys* twonkyproxy cgi-bin/* plugins/*"
+Eventually it is necessary to have a multicast route set for the
+server by issuinge, e.g.:
+"route add -net 224.0.0.0 netmask 240.0.0.0 dev eth0"
+
+If you are running a Debian distribution on a 64 bit architecture, it
+is possible that you need to install the 32 bit compatibility
+libraries. In this case invoke:
+"apt-get install ia32-libs"
+
+Twonky needs an "appdata" folder to store its database and other runtime generated 
+files. The default location for this depends on the user running the server. For
+the user root (id = 0) this is
+
+/var/twonky
+
+For all other users this is
+
+$HOME/.twonky
+
+We recommend to remove all files from appdata folder after updating Twonky server 
+to a newer version.
+
+To specify an alternate location for the "appdata" use the command line swtich 
+
+-appdata "/<PATH TO APPDATA FOLDER>"
+
+The specified path needs to be full qualified, do not use relative paths here.
+
+In any case make sure that this folder exists and is writable before starting the 
+server.
+
+Now start the server with a full qualified path (never just "./twonkystarter"),
+but "/usr/local/twonky/twonkystarter" . The server will display a startup
+message. The server is running now and you can find and use it with
+your UPnP client device. Before you continue, you should point the
+server to one or more content directories via the configuration
+web-page, unless the content is available from subdirectories of the
+server' working directory.
+
+To open the server's configuration web-page, open the following url in a web 
+browser:
+
+http://127.0.0.1:9000/webconfig
+
+
+If the server can not be found by the client device check your
+firewall settings.
+
+To enable autostart of the server, you need to be a Linux expert,
+because all Linux flavours differ and no general procedure can be
+suggested. In many cases "twonky.sh" could be adapted to your
+needs and linked into an appropriate location to enable autostart. The
+script is intended to work on SUSE, OpenSUSE, Fedora Core and other
+Linux Standard Base (LSB) compliant systems when installed into
+/etc/init.d and linked to rc3.d and rc5.d as S99twonkyserver and
+K99twonkyserver:
+"ln s ../twonky.sh S99twonkyserver"
+"ln s ../twonky.sh K99twonkyserver"
+
+Please note:
+twonkyproxy is no longer automatically started by twonkystarter. 
+This is now started directly by the init script twonky.sh. If you are using an alternate 
+method of starting twonkyserver, you also need to use that to start twonkyproxy.
+
+Known issue:
+
+The installer script (twonky*.sh) is not working for modern ubuntu linux
+systems due to incompatibitlities with some system config tools (chkconfig 
+vs. update-rc.d). The manual installation however is unaffected.
+
+
+Contact
+-------
+Website: http://www.twonkymedia.com
+mailto: support@twonkymedia.com
+
+
+This document was last modified Mar. 19. 2013.
+

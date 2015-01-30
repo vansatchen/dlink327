@@ -1,0 +1,26 @@
+<Device>
+    <DeviceTypeString>Windows Media Player</DeviceTypeString>
+    <MAC>54:04:A6:B4:AA:3A</MAC>
+    <IP>192.168.1.128</IP>
+    <UDN></UDN>
+    <UserAgent>Windows-Media-Player</UserAgent>
+    <UserAgentField></UserAgentField>
+    <UserAgent2></UserAgent2>
+    <UserAgent2Field></UserAgent2Field>
+    <UserAgentAndOp>0</UserAgentAndOp>
+    <ViewName></ViewName>
+    <Location></Location>
+    <FriendlyName></FriendlyName>
+    <Timestamp>1422604892</Timestamp>
+    <Enabled>3</Enabled>
+    <Fixed>2</Fixed>
+    <Prio>3</Prio>
+    <DeviceType>0</DeviceType>
+    <BrokenActionMask>0</BrokenActionMask>
+    <LastAlive>1422605332</LastAlive>
+    <LastSeen>1422605332</LastSeen>
+    <DoNotDelete>0</DoNotDelete>
+    <DeviceIndex>71</DeviceIndex>
+    <RemoteNetworkDevice>0</RemoteNetworkDevice>
+    <CurrentUser>guest</CurrentUser>
+</Device>

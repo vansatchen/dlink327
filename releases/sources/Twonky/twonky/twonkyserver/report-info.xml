@@ -1,0 +1,10 @@
+<ReportInfo>
+	<DeviceReport>
+		<!-- Last response: HTTP/1.1 200 OK -->
+		<!-- Last successful report: 2015-01-30T07:24:45 -->
+		<LastSuccessfulReportTime>1422584685</LastSuccessfulReportTime>
+		<!-- Next scheduled report: 2015-01-31T07:24:45 -->
+		<NextReportTime>1422671085</NextReportTime>
+		<TwonkyVersion>7.3-RC4</TwonkyVersion>
+	</DeviceReport>
+</ReportInfo>

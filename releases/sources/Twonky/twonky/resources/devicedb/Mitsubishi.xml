@@ -1,0 +1,17 @@
+<Client>
+	<DeviceId>
+		<DisplayName>Mitsubishi STB</DisplayName>
+		<DeviceDescriptionRecognition>
+			<DescriptionText>Mitsubishi Electric Corporation</DescriptionText>
+		</DeviceDescriptionRecognition>		
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNA15</Version>
+		</DLNA>
+		<DTCP>
+			<AkeSocketScheme>THREE_SOCKET_SCHEME</AkeSocketScheme>
+		</DTCP>	
+	</Adaptations>
+</Client>

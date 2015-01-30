@@ -1,0 +1,15 @@
+<Client>
+	<DeviceId>
+		<DisplayName>XBMC DMR</DisplayName>
+		<DeviceDescriptionRecognition>
+			<DescriptionText>XBMC Media Center - Media Renderer</DescriptionText>
+		</DeviceDescriptionRecognition>
+		<MappingUpdatePolicy>FIXPC</MappingUpdatePolicy>
+	</DeviceId>
+	<Adaptations>
+		<MimeTranslations>
+			<!-- DMR announces support for LPCM but fails to play it via pull and push -->
+			<MimeTypeSuppress>audio/L16</MimeTypeSuppress>
+		</MimeTranslations>
+	</Adaptations>
+</Client>

@@ -1,0 +1,18 @@
+<Client>
+	<DeviceId>
+		<DisplayName>WD TV Media Player</DisplayName>
+		<DeviceDescriptionRecognition>
+			<DescriptionText>WD TV Media Player</DescriptionText>
+		</DeviceDescriptionRecognition>
+		<MappingUpdatePolicy>FIX</MappingUpdatePolicy>
+	</DeviceId>
+	<Adaptations>
+		<DLNA>
+			<Version>DLNA15</Version>
+		</DLNA>
+	</Adaptations>
+	<DeviceQuirks>
+		<Quirk>TV4IDS</Quirk>
+		<Quirk>NEEDS_THUMBNAIL_CI_FLAG</Quirk>
+	</DeviceQuirks>
+</Client>

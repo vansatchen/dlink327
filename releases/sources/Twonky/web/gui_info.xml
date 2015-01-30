@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+<help>
+	<show_name>Transmission</show_name>
+	<desc>
+	<![CDATA[ 
+	The ShareCenter's Transmission functionality is enhanced with the Transmission add-on. Transmission also provides a full featured P2P Web UI interface can be launched to work with your ShareCenter P2P functionality.gui_info.xml
+	]]>
+	</desc>
+	<version>1.00</version>
+	<path>/Volume_1/Nas_Prog/Transmission/</path>
+	<releasse_date>10/18/2010</releasse_date>
+</help>
+</config>

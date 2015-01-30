@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html  lang=en>
+  <head>
+    <title>TwonkyServer BMS TestUI</title>
+    <meta charset=utf-8>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="cache-control" content="no-cache">
+  </head>
+<body>
+<h3>DLNA Diagnostics Application</h3>
+<hr>
+<form action="__STRURLBASE__diagc" method="get" target="_self">
+  <button type="submit">Home</button>
+  <button type="submit" name="diage_device" value="__DEVID__">Refresh Device</button>
+</form>
+<p><b><i>__SERVER__</i></b></p>
+<p>Device Status: <i>__DEVSTATUS__</i></p>
+<fieldset name="results"><legend>Available Tests Results:</legend>
+<table style="width:300px">
+<tr>
+  <td><b>ID</b></td>
+  <td><b>Type</b></td>
+  <td><b>Status</b></td>
+</tr>
+__TESTLIST__
+</table>
+</fieldset><br><br><br>
+<form action="__STRURLBASE__diagc" method="get" target="_self">
+  <select name="diage_action">
+  __ACTIONLIST__
+  </select>
+  <input type="submit" value="Open">
+  <input type="hidden" name="diage_device" value="__DEVID__">
+</form><br>
+<fieldset name="nslookup" style="display:none"><legend>NSLookup:</legend>
+  <table style="width:1000px">
+  <tr><td>
+  <form name="nslookup" action="__STRURLBASE__diagc/actions/nslookup" method="get" target="_self">
+    Host: <input type="text" name="Host" value="__NSLOOKUP_HOST__" maxlength=64><br>
+    DNSServer: <input type="text" name="DNSServer" value="__NSLOOKUP_DNS__" maxlength=64><br>
+    NumberOfRepetitions: <input type="number" name="NumberOfRepetitions" value=__NSLOOKUP_NOR__ min=0 max=100000 maxlength=6><br>
+    Timeout (ms): <input type="number" name="Timeout" value=__NSLOOKUP_TIMEOUT__ min=0 max=10240 maxlength=5><br>
+    <input type="hidden" name="diage_device" value="__DEVID__">
+    <input type="submit"> __NSLOOKUP_RC__
+  </form>
+  <form name="nslookup_rc" style="display:none" action="__STRURLBASE__diagc/actions/get_nslookup_result" method="get" target="_self">
+    <input type="hidden" name="diage_device" value="__DEVID__">
+    <input type="hidden" name="test_id" value="__NSLOOKUP_ID__">
+    <input type="submit" value="Get Last Result"> __NSLOOKUP_RESULT_RC__
+  </form>
+  </td><td>
+  <div id="div_nslookupresult" style="display:none">
+    <b>__GETNSLOOKUP_STATUS__</b><br><br>
+    AdditionalInfo: <br><textarea rows="1" cols="50">__GETNSLOOKUP_ADDINFO__</textarea><br>
+    SuccessCount:  __GETNSLOOKUP_SUCCESSCOUNT__ <br>
+    Result: <br><textarea rows="1" cols="50">__GETNSLOOKUP_RESULT__</textarea><br>
+  </div>
+  </td></tr>
+  </table>
+</fieldset>
+<fieldset name="traceroute" style="display:none"><legend>Traceroute:</legend>
+  <table style="width:1000px">
+  <tr><td>
+    <form name="traceroute" action="__STRURLBASE__diagc/actions/traceroute" method="get" target="_self">
+      Host: <input type="text" name="Host" value="__TRACEROUTE_HOST__" maxlength=64><br>
+      Timeout (ms): <input type="number" name="Timeout" value=__TRACEROUTE_TIMEOUT__ min=0 max=100000 maxlength=6><br>
+      DataBlockSize: <input type="number" name="DataBlockSize" value=__TRACEROUTE_DBS__ min=0 max=10240 maxlength=5><br>
+      MaxHopCount: <input type="number" name="MaxHopCount" value=__TRACEROUTE_MHC__ min=0 max=100000 maxlength=6><br>
+      DSCP: <input type="number" name="DSCP" value=__TRACEROUTE_DSCP__ min=0 max=1000 maxlength=4><br>
+      <input type="hidden" name="diage_device" value="__DEVID__">
+      <input type="submit" value="Start New Test"> __TRACEROUTE_RC__
+    </form>
+    <form name="traceroute_rc" style="display:none" action="__STRURLBASE__diagc/actions/get_traceroute_result" method="get" target="_self">
+      <input type="hidden" name="test_id" value="__TRACEROUTE_ID__">
+      <input type="hidden" name="diage_device" value="__DEVID__">
+      <input type="submit" value="Get Last Result"> __TRACEROUTE_RESULT_RC__
+    </form>
+  </td><td>
+    <div id="div_tracerouteresult" style="display:none">
+    <b>__GETTRACEROUTE_STATUS__</b><br><br>
+    ResponseTime: __GETTRACEROUTE_TIME__ms<br>
+    AdditionalInfo: <br><textarea rows="1" cols="50">__GETTRACEROUTE_ADDINFO__</textarea><br>
+    HopHosts: <br><textarea rows="1" cols="50">__GETTRACEROUTE_HOPHOSTS__</textarea><br>
+    </div>
+  </td></tr>
+  </table>
+</fieldset>
+<fieldset name="ping" style="display:none"><legend>Ping:</legend>
+  <table style="width:1000px">
+  <tr><td>
+  <form name="ping" action="__STRURLBASE__diagc/actions/ping" method="get" target="_self">
+    Host:<input type="text" name="Host" value="__PING_HOST__" maxlength=64><br>
+    NumberOfRepetitions:<input type="number" name="NumberOfRepetitions" value=__PING_NOR__ min=0 max=100000 maxlength=6><br>
+    Timeout (ms):<input type="number" name="Timeout" value=__PING_TIMEOUT__ min=0 max=100000 maxlength=6><br>
+    DataBlockSize:<input type="number" name="DataBlockSize" value=__PING_DBS__ min=0 max=10240 maxlength=5><br>
+    DSCP<input type="number" name="DSCP" value=__PING_DSCP__ min=0 max=1000 maxlength=4><br>
+    <input type="hidden" name="diage_device" value="__DEVID__">
+    <input type="submit"> __PING_RC__
+  </form>
+  <form name="ping_rc" style="display:none" action="__STRURLBASE__diagc/actions/get_ping_result" method="get" target="_self">
+    <input type="hidden" name="diage_device" value="__DEVID__">
+    <input type="hidden" name="test_id" value="__PING_ID__">
+    <input type="submit" value="Get Last Result"> __PING_RESULT_RC__
+  </form>
+  </td><td>
+  <div id="div_pingresult" style="display:none">
+    <b>__GETPING_STATUS__</b><br><br>
+    AdditionalInfo: <br><textarea rows="1" cols="50">__GETPING_ADDINFO__</textarea><br>
+    SuccessCount: __GETPING_SUCCESSCOUNT__<br>
+    FailureCount: __GETPING_FAILURECOUNT__<br>
+    AverageResponseTime : __GETPING_AVGTIME__ms<br>
+    MinimumResponseTime: __GETPING_MINTIME__ms<br>
+    MaximumResponseTime:__GETPING_MAXTIME__ms<br>
+  </div>
+  </td></tr>
+  </table>
+</fieldset>
+<fieldset name="selftest" style="display:none"><legend>SelfTest:</legend>
+  <table style="width:1000px">
+  <tr><td>
+  <form name="selftest" action="__STRURLBASE__diagc/actions/selftest" method="get" target="_self">
+    <input type="hidden" name="diage_device" value="__DEVID__">
+    <input type="submit"> __SELFTEST_RC__
+  </form>
+  <form name="selftest_rc" style="display:none" action="__STRURLBASE__diagc/actions/get_selftest_result" method="get" target="_self">
+    <input type="hidden" name="diage_device" value="__DEVID__">
+    <input type="hidden" name="test_id" value="__SELFTEST_ID__">
+    <input type="submit" value="Get Last Result"> __SELFTEST_RESULT_RC__
+  </form>
+  </td><td>
+  <div id="div_selftestresult" style="display:none">
+    <b>__GETSELFTEST_STATUS__</b><br><br>
+    AdditionalInfo: <br><textarea rows="1" cols="50">__GETSELFTEST_ADDINFO__</textarea><br>
+  </div>
+  </td></tr>
+  </table>
+</fieldset>
+<fieldset name="canceltest" style="display:none"><legend>Cancel Test:</legend>
+  <table style="width:1000px">
+  <tr><td>
+  <form name="canceltest" action="__STRURLBASE__diagc/actions/canceltest" method="get" target="_self">
+    <input type="hidden" name="diage_device" value="__DEVID__">
+    <input type="submit"> __CANCELTEST_RC__
+  </form>
+  </td><td>
+  </td></tr>
+  </table>
+</fieldset>
+</body>
+</html>

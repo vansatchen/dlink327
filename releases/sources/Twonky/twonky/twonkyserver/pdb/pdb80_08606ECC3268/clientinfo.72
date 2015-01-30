@@ -1,0 +1,26 @@
+<Device>
+    <DeviceTypeString>Generic Media Receiver</DeviceTypeString>
+    <MAC>12:1E:2B:79:50:13</MAC>
+    <IP>192.168.1.50</IP>
+    <UDN></UDN>
+    <UserAgent>DLNADOC/1.50</UserAgent>
+    <UserAgentField></UserAgentField>
+    <UserAgent2></UserAgent2>
+    <UserAgent2Field></UserAgent2Field>
+    <UserAgentAndOp>0</UserAgentAndOp>
+    <ViewName></ViewName>
+    <Location></Location>
+    <FriendlyName></FriendlyName>
+    <Timestamp>1422605001</Timestamp>
+    <Enabled>3</Enabled>
+    <Fixed>0</Fixed>
+    <Prio>0</Prio>
+    <DeviceType>0</DeviceType>
+    <BrokenActionMask>0</BrokenActionMask>
+    <LastAlive>1422605364</LastAlive>
+    <LastSeen>1422605364</LastSeen>
+    <DoNotDelete>0</DoNotDelete>
+    <DeviceIndex>72</DeviceIndex>
+    <RemoteNetworkDevice>0</RemoteNetworkDevice>
+    <CurrentUser>guest</CurrentUser>
+</Device>
