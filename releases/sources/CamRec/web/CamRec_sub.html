@@ -95,13 +95,13 @@ $(document).ready(function(){
 			</tr>
 		</table>
 <!-- Configure camrec -->
-<style type="text/css">
-	th {
-	   background: #E1EFFB;
-	   width: 25%;
-	   height: 20px;
-	}
-</style>
+		<style type="text/css">
+			th {
+			   background: #E1EFFB;
+			   width: 25%;
+			   height: 20px;
+			}
+		</style>
 		<table border="0" width="100%" cellspacing="0" cellpadding="0">
 			<tr><td><hr></td></tr>
                         <tr id="id_CamRec_icon">
@@ -133,12 +133,20 @@ $(document).ready(function(){
 							}
 							$(document).ready(function(){
 							   show();
-							   setInterval('show()',5000);
+							   setInterval('show()',2000);
 							});
 						   </script>
 						</td>
 					</tr>
+					<tr>
+						<td><div id="But_STOP" class="button_medium">Stop</div>
+					</tr>
+					<br >
+					<tr>
+						<td><div id="But_START" class="button_medium">Start</div>
+					</tr><script type="text/javascript" src="js/config.js"></script>
 				</table>
+				<br >
 				<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="95%">
 					<tr><td><h1><b>Config</b></h1></td></tr>
 				</table>

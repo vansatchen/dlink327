@@ -49,3 +49,31 @@ function sendtime(){
 			}
 		});
 }
+
+$(document).ready(function(){
+	$('#But_STOP').click(function() {
+		$.ajax({
+			url: "scripts/stop.php",
+			cache: false,
+			type: 'Get',
+			data:{book:1},
+			success: function(count) {
+				$('#countinfo').html(count+"");
+			}
+		});
+	});
+});
+
+$(document).ready(function(){
+	$('#But_STOP').click(function() {
+		$.ajax({
+			url: "scripts/start.php",
+			cache: false,
+			type: 'Get',
+			data:{book:1},
+			success: function(count) {
+				$('#countinfo').html(count+"");
+			}
+		});
+	});
+});
