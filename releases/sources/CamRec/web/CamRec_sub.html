@@ -97,7 +97,6 @@ $(document).ready(function(){
 <!-- Configure camrec -->
 <style type="text/css">
 	th {
-//	   background: #79AED5;
 	   background: #E1EFFB;
 	   width: 25%;
 	   height: 20px;
@@ -165,14 +164,27 @@ $(document).ready(function(){
 						</th>
 						<th>
 						   <form action="" id="fpsform">
-							<input type="number" name="streamfps" id="streamfps" />
-							<input type="button" onclick="sendfps();" value="Save" />
+							<select size="1" name="streamfps" id="streamfps" onchange="sendfps();" />
+								<option selected value="">Change</option>
+								<option value="1">1</option>
+								<option value="5">5</option>
+								<option value="10">10</option>
+								<option value="15">15</option>
+								<option value="20">20</option>
+								<option value="25">25</option>
+								<option value="30">30</option>
+							</select>
 						   </form>
 						</th>
 						<th>
 						   <form action="" id="timeform">
-							<input type="number" name="streamtime" id="streamtime" />
-							<input type="button" onclick="sendtime();" value="Save" />
+							<select size="1" name="streamtime" id="streamtime" onchange="sendtime();" />
+								<option selected value="">Change</option>
+								<option value="15">15</option>
+								<option value="30">30</option>
+								<option value="45">45</option>
+								<option value="60">60</option>
+							</select>
 						   </form>
 						</th>
 					</tr>
