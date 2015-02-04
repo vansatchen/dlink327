@@ -116,3 +116,17 @@ $(document).ready(function(){
 		});
 	});
 });
+
+function showcurrentconfig(){
+	$.ajax({
+		url: "scripts/currentconfig.php",
+		cache: false,
+		success: function(html){
+			$("#currentconfigresult").html(html);
+		}
+	});
+}
+$(document).ready(function(){
+	showcurrentconfig();
+	setInterval('showcurrentconfig()',3000);
+});

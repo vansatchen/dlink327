@@ -9,22 +9,24 @@
       <center_type>0</center_type>
       <name>CamRec</name>
       <show>CamRec</show>
-      <enable>0</enable>
+      <enable>1</enable>
       <version>2.0-0</version>
       <date>20150204</date>
-      <inst_date/>
-      <path/>
-      <ps_name/>
+      <inst_date>02/04/2015</inst_date>
+      <path>/mnt/HD/HD_a2/Nas_Prog/CamRec</path>
+      <ps_name></ps_name>
       <url>index.html</url>
       <url_port>80</url_port>
       <apkg_version>2</apkg_version>
       <packager>rusatch</packager>
       <email>rusatch@mail.ru</email>
-      <homepage/>
-      <inst_depend/>
-      <inst_conflict/>
-      <start_depend/>
-      <start_conflict/>
+      <homepage></homepage>
+      <inst_depend></inst_depend>
+      <inst_conflict></inst_conflict>
+      <start_depend></start_depend>
+      <start_conflict></start_conflict>
+      <description></description>
+      <icon></icon>
     </item>
   </apkg>
 </config>

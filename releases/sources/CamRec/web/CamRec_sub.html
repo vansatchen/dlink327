@@ -157,8 +157,10 @@ $(document).ready(function(){
 						<th>Port</th>
 						<th>FPS</th>
 						<th>Record time</th>
-						<th>DeInterlacing filter</th>
+						<th>Use Yadif</th>
 						<th>Store videos</th>
+					</tr>
+					<tr id="currentconfigresult">
 					</tr>
 					<tr>
 						<th>
@@ -208,8 +210,8 @@ $(document).ready(function(){
 						   <form action="" id="filterform">
 							<select size="1" name="streamfilter" id="streamfilter" onchange="sendfilter();" />
 								<option selected value="">Change me</option>
-								<option value="false">None</option>
-								<option value="true">Yadif</option>
+								<option value="false">false</option>
+								<option value="true">true</option>
 							</select>
 						  </form>
 						</th>
@@ -231,6 +233,8 @@ $(document).ready(function(){
 				</table>
 				<br >
 				<div id="configresult"></div><script type="text/javascript" src="js/config.js"></script>
+<!--				<br >
+				<div id="currentconfigresult"></div><script type="text/javascript" src="js/config.js"></script>-->
 			</td>
                         </tr>
 		</table>
