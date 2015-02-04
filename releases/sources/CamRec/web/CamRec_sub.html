@@ -98,7 +98,7 @@ $(document).ready(function(){
 		<style type="text/css">
 			th {
 			   background: #E1EFFB;
-			   width: 25%;
+			   width: 14.3%;
 			   height: 20px;
 			}
 		</style>
@@ -152,12 +152,21 @@ $(document).ready(function(){
 				</table>
 				<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="95%">
 					<tr>
+						<th>Output directory</th>
 						<th>Streamhost</th>
 						<th>Streamport</th>
 						<th>FPS</th>
 						<th>Record time</th>
+						<th>DeInterlacing filter</th>
+						<th>Store videos</th>
 					</tr>
 					<tr>
+						<th>
+						   <form action="" id="diroutform">
+							<input type="text" name="streamdirout" id="streamdirout" />
+							<input type="button" onclick="senddirout();" value="Save" />
+						  </form>
+						</th>
 						<th>
 						   <form action="" id="hostform">
 							<input type="text" name="streamhost" id="streamhost" />
@@ -173,7 +182,7 @@ $(document).ready(function(){
 						<th>
 						   <form action="" id="fpsform">
 							<select size="1" name="streamfps" id="streamfps" onchange="sendfps();" />
-								<option selected value="">Change</option>
+								<option selected value="">Change me</option>
 								<option value="1">1</option>
 								<option value="5">5</option>
 								<option value="10">10</option>
@@ -187,11 +196,34 @@ $(document).ready(function(){
 						<th>
 						   <form action="" id="timeform">
 							<select size="1" name="streamtime" id="streamtime" onchange="sendtime();" />
-								<option selected value="">Change</option>
+								<option selected value="">Change me</option>
 								<option value="15">15</option>
 								<option value="30">30</option>
 								<option value="45">45</option>
 								<option value="60">60</option>
+							</select>
+						   </form>
+						</th>
+						<th>
+						   <form action="" id="filterform">
+							<select size="1" name="streamfilter" id="streamfilter" onchange="sendfilter();" />
+								<option selected value="">Change me</option>
+								<option value="false">None</option>
+								<option value="true">Yadif</option>
+							</select>
+						  </form>
+						</th>
+						<th>
+						   <form action="" id="storeform">
+							<select size="1" name="streamstore" id="streamstore" onchange="sendstore();" />
+								<option selected value="">Change me</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
 							</select>
 						   </form>
 						</th>

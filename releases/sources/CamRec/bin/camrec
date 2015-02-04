@@ -21,13 +21,14 @@ if [ -d "$DIROUT/$OLDDIRHOUR" ]; then
 fi
 
 echo "==========" >> $CAMRECPATH/log/camrec.log
-echo "`date` camrec starting. will finish after $RCDTIME" >> $CAMRECPATH/log/camrec.log
+#echo "`date` camrec starting. will finish after $RCDTIME" >> $CAMRECPATH/log/camrec.log
+echo "`date` camrec starting. will finish after 00:$RCRDTIME:00" >> $CAMRECPATH/log/camrec.log
 
-if [[ "$YADIF" == "true" ]]
+if [[ "$RCRDFILTER" == "true" ]]
 then
-  YADIF="-vf yadif"
+  RCRDFILTER="-vf yadif"
 else
-  YADIF=""
+  RCRDFILTER=""
 fi
 
 if [[ "$TESTSTR" == "true" ]]
@@ -52,7 +53,8 @@ fi
 
 DIRHOUROUT=`date +%d-%m-%H.%M`
 mkdir -p $DIROUT/$DIRHOUROUT
-/bin/ffmpeg -f mjpeg -r $VIDEOFPS -i $VIDEOSRC:$SRCPORT -vcodec $VIDEOCDC $YADIF -r $VIDEOFPS -t $RCDTIME $DIROUT/$DIRHOUROUT/camrec.avi & pidof ffmpeg > /var/run/ffmpeg.pid
+#/bin/ffmpeg -f mjpeg -r $VIDEOFPS -i $VIDEOSRC:$SRCPORT -vcodec $VIDEOCDC $RCRDFILTER -r $VIDEOFPS -t $RCDTIME $DIROUT/$DIRHOUROUT/camrec.avi & pidof ffmpeg > /var/run/ffmpeg.pid
+/bin/ffmpeg -f mjpeg -r $VIDEOFPS -i $VIDEOSRC:$SRCPORT -vcodec $VIDEOCDC $RCRDFILTER -r $VIDEOFPS -t 00:$RCRDTIME:00 $DIROUT/$DIRHOUROUT/camrec.avi & pidof ffmpeg > /var/run/ffmpeg.pid
 echo "`date` record stoped at `date +%d-%m-%H.%M`" >> $CAMRECPATH/log/camrec.log
 echo "`date` camrec.avi available at $DIROUT/$DIRHOUROUT/$DIRHOUROUT" >> $CAMRECPATH/log/camrec.log
 

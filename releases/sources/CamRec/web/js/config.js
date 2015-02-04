@@ -1,3 +1,16 @@
+function senddirout(){
+	var diroutdata = $('#streamdirout').val()
+		$.ajax({
+			type: "POST",
+			url: "scripts/senddirout.php",
+			data: "diroutdata="+diroutdata,
+			success: function(html) {
+				$("#configresult").empty();
+				$("#configresult").append(html);
+			}
+		});
+}
+
 function sendhost(){
 	var hostdata = $('#streamhost').val()
 		$.ajax({
@@ -43,6 +56,32 @@ function sendtime(){
 			type: "POST",
 			url: "scripts/sendtime.php",
 			data: "timedata="+timedata,
+			success: function(html) {
+				$("#configresult").empty();
+				$("#configresult").append(html);
+			}
+		});
+}
+
+function sendfilter(){
+	var filterdata = $('#streamfilter').val()
+		$.ajax({
+			type: "POST",
+			url: "scripts/sendfilter.php",
+			data: "filterdata="+filterdata,
+			success: function(html) {
+				$("#configresult").empty();
+				$("#configresult").append(html);
+			}
+		});
+}
+
+function sendstore(){
+	var storedata = $('#streamstore').val()
+		$.ajax({
+			type: "POST",
+			url: "scripts/sendstore.php",
+			data: "storedata="+storedata,
 			success: function(html) {
 				$("#configresult").empty();
 				$("#configresult").append(html);
