@@ -1,7 +1,7 @@
 <?php
 
-//$camrecconf = '/mnt/HD/HD_a2/Nas_Prog/CamRec/etc/camrec.conf';
-$camrecconf = '../config.conf';
+$camrecconf = '/mnt/HD/HD_a2/Nas_Prog/CamRec/etc/camrec.conf';
+//$camrecconf = '../config.conf';
 $portdata = $_POST[portdata];
 
 if (empty($portdata)) {

@@ -8,7 +8,7 @@ if (!$return) {
     echo "<b><font color='red'>NOT WORKING!!!</font></b>";
 }
 
-exec("ps -e | grep ffmpeg | grep -v grep | awk 'NR==1 {print $11,$9,$13,$19,$20}'| sed -e 's#/mnt/HD/HD_b2/smb/cam/##'", $output);
+exec("ps -e | grep ffmpeg | grep -v grep | awk 'NR==1 {print $11,$9,$13,$17,$18}'| sed -e 's#/mnt/HD/HD_b2/smb/cam/##'", $output);
 foreach ( $output as $output ) {
     $status_array=explode(" ", $output);
     echo "<ul>";
