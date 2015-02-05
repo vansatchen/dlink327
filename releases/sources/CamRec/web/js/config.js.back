@@ -2,7 +2,7 @@ function senddirout(){
 	var diroutdata = $('#streamdirout').val()
 		$.ajax({
 			type: "POST",
-			url: "scripts/senddata.php?func=senddirout",
+			url: "scripts/senddirout.php",
 			data: "diroutdata="+diroutdata,
 			success: function(html) {
 				$("#configresult").empty();
@@ -15,7 +15,7 @@ function sendhost(){
 	var hostdata = $('#streamhost').val()
 		$.ajax({
 			type: "POST",
-			url: "scripts/senddata.php?func=sendhost",
+			url: "scripts/sendhost.php",
 			data: "hostdata="+hostdata,
 			success: function(html) {
 				$("#configresult").empty();
@@ -28,7 +28,7 @@ function sendport(){
 	var portdata = $('#streamport').val()
 		$.ajax({
 			type: "POST",
-			url: "scripts/senddata.php?func=sendport",
+			url: "scripts/sendport.php",
 			data: "portdata="+portdata,
 			success: function(html) {
 				$("#configresult").empty();
@@ -41,7 +41,7 @@ function sendfps(){
 	var fpsdata = $('#streamfps').val()
 		$.ajax({
 			type: "POST",
-			url: "scripts/senddata.php?func=sendfps",
+			url: "scripts/sendfps.php",
 			data: "fpsdata="+fpsdata,
 			success: function(html) {
 				$("#configresult").empty();
@@ -54,7 +54,7 @@ function sendtime(){
 	var timedata = $('#streamtime').val()
 		$.ajax({
 			type: "POST",
-			url: "scripts/senddata.php?func=sendtime",
+			url: "scripts/sendtime.php",
 			data: "timedata="+timedata,
 			success: function(html) {
 				$("#configresult").empty();
@@ -67,7 +67,7 @@ function sendfilter(){
 	var filterdata = $('#streamfilter').val()
 		$.ajax({
 			type: "POST",
-			url: "scripts/senddata.php?func=sendfilter",
+			url: "scripts/sendfilter.php",
 			data: "filterdata="+filterdata,
 			success: function(html) {
 				$("#configresult").empty();
@@ -80,7 +80,7 @@ function sendstore(){
 	var storedata = $('#streamstore').val()
 		$.ajax({
 			type: "POST",
-			url: "scripts/senddata.php?func=sendstore",
+			url: "scripts/sendstore.php",
 			data: "storedata="+storedata,
 			success: function(html) {
 				$("#configresult").empty();
