@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Please note it's not a system-wide settings, it's only for a current
+# terminal session. Point your f\w (if necessery) to execute /opt/etc/profile
+# at console logon.
+
+export PATH=/Apps/opt/bin:/Apps/opt/sbin:$PATH
+export TERMINFO=/Apps/opt/share/terminfo 
+export TERM=xterm
+export TMP=/Apps/opt/tmp
+export TEMP=/Apps/opt/tmp
+alias mc="mc -c"
+
+# You may define localization
+#export LANG='ru_RU.UTF-8'
+#export LC_ALL='ru_RU.UTF-8'
+

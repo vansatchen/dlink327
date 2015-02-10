@@ -1,0 +1,10 @@
+Package: libpthread
+Version: 2.20-8b
+Depends: libgcc
+Source: package/libs/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: qnaparm
+Installed-Size: 36197
+Description:  POSIX thread library

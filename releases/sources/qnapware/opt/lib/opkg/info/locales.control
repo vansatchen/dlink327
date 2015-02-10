@@ -1,0 +1,9 @@
+Package: locales
+Version: 2.20-8b
+Source: package/libs/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: qnaparm
+Installed-Size: 582555
+Description:  Locales support (independent of system lib)

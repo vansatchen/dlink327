@@ -1,0 +1,9 @@
+Package: libgcc
+Version: 4.8.3-8b
+Source: package/libs/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: qnaparm
+Installed-Size: 42866
+Description:  GCC support library

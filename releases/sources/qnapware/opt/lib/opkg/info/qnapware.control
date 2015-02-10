@@ -1,0 +1,9 @@
+Package: qnapware
+Version: 2.6.1-5
+Depends: libc, libgcc, libstdcpp, libpthread, librt, locales, findutils, terminfo
+Source: feeds/rtndev/qnapware
+Section: libs
+Maintainer: Zyxmon
+Architecture: qnaparm
+Installed-Size: 1660
+Description:  qnapware is a metapackage to install qnapware basic libraries and scripts.

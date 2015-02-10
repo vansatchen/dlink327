@@ -1,0 +1,86 @@
+Package: terminfo
+Version: 5.9-1b
+Depends: libc
+Status: install ok installed
+Architecture: qnaparm
+Installed-Time: 1423455506
+Auto-Installed: yes
+
+Package: libc
+Version: 2.20-8b
+Depends: libgcc
+Status: install ok installed
+Architecture: qnaparm
+Installed-Time: 1423455502
+Auto-Installed: yes
+
+Package: locales
+Version: 2.20-8b
+Status: install ok installed
+Architecture: qnaparm
+Installed-Time: 1423455505
+Auto-Installed: yes
+
+Package: libpthread
+Version: 2.20-8b
+Depends: libgcc
+Status: install ok installed
+Architecture: qnaparm
+Installed-Time: 1423455503
+Auto-Installed: yes
+
+Package: libstdcpp
+Version: 4.8.3-8b
+Status: install ok installed
+Architecture: qnaparm
+Installed-Time: 1423455503
+Auto-Installed: yes
+
+Package: libgcc
+Version: 4.8.3-8b
+Status: install ok installed
+Architecture: qnaparm
+Installed-Time: 1423455502
+Auto-Installed: yes
+
+Package: librt
+Version: 2.20-8b
+Depends: libpthread
+Status: install ok installed
+Architecture: qnaparm
+Installed-Time: 1423455504
+Auto-Installed: yes
+
+Package: qnapware
+Version: 2.6.1-5
+Depends: libc, libgcc, libstdcpp, libpthread, librt, locales, findutils, terminfo
+Status: install user installed
+Architecture: qnaparm
+Conffiles:
+ /Apps/opt/etc/profile 88439a82f078ab6fa7cbbbeb9af9b031
+Installed-Time: 1423455506
+
+Package: libncurses
+Version: 5.9-1b
+Depends: libc, terminfo
+Status: install ok installed
+Architecture: qnaparm
+Installed-Time: 1423455737
+Auto-Installed: yes
+
+Package: libpcap
+Version: 1.5.3-1
+Depends: libc
+Status: install ok installed
+Architecture: qnaparm
+Installed-Time: 1423455736
+Auto-Installed: yes
+
+Package: findutils
+Version: 4.5.14-1
+Depends: libc
+Status: install ok installed
+Architecture: qnaparm
+Installed-Time: 1423455506
+Auto-Installed: yes
+

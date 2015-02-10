@@ -1,0 +1,10 @@
+Package: terminfo
+Version: 5.9-1b
+Depends: libc
+Source: package/libs/ncurses
+License: MIT
+LicenseFiles: README
+Section: libs
+Architecture: qnaparm
+Installed-Size: 5669
+Description:  Terminal Info Database (ncurses)
