@@ -8,5 +8,6 @@ rm -f /etc/trafshow
 rm -f /bin/iperf
 rm -f /bin/iperf3
 rm -f /bin/nethogs
+rm -f /bin/ngrep
 
 exit 0
