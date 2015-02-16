@@ -7,9 +7,12 @@ if($_GET["func"] == "sendmountto") {
    if (empty($nfsserverdata)) { exit("<b><font color='red'>NFS-server CELL MUST BE FILLED!!!</font></b>"); }
    if (empty($nfssharedata)) { exit("<b><font color='red'>Share CELL MUST BE FILLED!!!</font></b>"); }
    if (empty($mounttodata)) { exit("<b><font color='red'>Mount to CELL MUST BE FILLED!!!</font></b>"); }
-//	exec ("sed -i 's#DIROUT=.*#DIROUT=$diroutdata#g' $camrecconf", $output);
-//	echo "<b><font color='green'>Output directory saved!</font></b><br >";
-	echo "$nfsserverdata $nfssharedata $mounttodata";
+   if (is_writable($mounttodata)) { } else { exit("<b><font color='red'>Directory does not exist!!!</font></b>"); }
+
+   exec("/bin/mount | grep $mounttodata | grep -v nfsd", $output, $return);
+   if (!$return) { exit("<b><i>$mounttodata </i><font color='red'>already in use!!!</font></b>"); }
+
+   exec ("/sbin/mount.nfs $nfsserverdata:$nfssharedata $mounttodata", $output);
 }
 
 if($_GET["func"] == "sendshowmount") {
