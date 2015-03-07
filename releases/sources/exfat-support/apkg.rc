@@ -1,0 +1,13 @@
+Package:          exfat-support
+Version:          1.0-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    exfat-support
+AddonIndexPage:   
+AddonUsedPort:     
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      Support for exfat filesystem.
