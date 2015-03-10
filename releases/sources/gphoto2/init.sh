@@ -10,4 +10,7 @@ done
 
 [ -f /bin/gphoto2 ] && rm -f /bin/gphoto2
 
+export CAMLIBS=$path/lib/libgphoto2/2.5.6
+export IOLIBS=$path/lib/libgphoto2_port/0.12.0
+
 exit 0
