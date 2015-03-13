@@ -12,19 +12,21 @@
       <enable>0</enable>
       <version>2.5.6-1</version>
       <date>20150310</date>
-      <inst_date/>
-      <path/>
-      <ps_name/>
-      <url/>
-      <url_port/>
+      <inst_date>03/11/2015</inst_date>
+      <path>/mnt/HD/HD_a2/Nas_Prog/gphoto2</path>
+      <ps_name></ps_name>
+      <url></url>
+      <url_port></url_port>
       <apkg_version>2</apkg_version>
       <packager>rusatch</packager>
       <email>rusatch@mail.ru</email>
-      <homepage/>
-      <inst_depend/>
-      <inst_conflict/>
-      <start_depend/>
-      <start_conflict/>
+      <homepage></homepage>
+      <inst_depend></inst_depend>
+      <inst_conflict></inst_conflict>
+      <start_depend></start_depend>
+      <start_conflict></start_conflict>
+      <description></description>
+      <icon></icon>
     </item>
   </apkg>
 </config>
