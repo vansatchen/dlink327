@@ -8,9 +8,7 @@ for LIBA in $LIBCONS; do
         [ ! -f /lib/$LIBA ] && ln -s $path/lib/$LIBA /lib/
 done
 
-[ -f /bin/gphoto2 ] && rm -f /bin/gphoto2
-
-export CAMLIBS=$path/lib/libgphoto2/2.5.6
-export IOLIBS=$path/lib/libgphoto2_port/0.12.0
+echo 'export CAMLIBS=/mnt/HD/HD_a2/Nas_Prog/gphoto2/lib/libgphoto2/2.5.6' >> /home/root/.profile
+echo 'export IOLIBS=/mnt/HD/HD_a2/Nas_Prog/gphoto2/lib/libgphoto2_port/0.12.0' >> /home/root/.profile
 
 exit 0
