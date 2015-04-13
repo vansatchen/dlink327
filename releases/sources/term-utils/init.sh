@@ -13,5 +13,6 @@ done
 [ -f /bin/showmount ] && rm -f /bin/showmount
 [ -f /sbin/mount.nfs ] && rm -f /sbin/mount.nfs
 [ -f /bin/dialog ] && rm -f /bin/dialog
+[ -f /bin/clear ] && rm -f /bin/clear
 
 exit 0
