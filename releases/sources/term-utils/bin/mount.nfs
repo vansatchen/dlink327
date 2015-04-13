@@ -1,3 +1,9 @@
 #!/bin/sh
 busybox mount -t nfs $@
+
+if [ $? -eq 0 ]; then
+	echo "Successfully!"
+else
+	echo "Error"
+fi
 exit 0

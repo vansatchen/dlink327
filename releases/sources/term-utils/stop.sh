@@ -5,5 +5,6 @@
 [ -f /bin/file ] && rm -f /bin/file
 [ -f /bin/showmount ] && rm -f /bin/showmount
 [ -f /sbin/mount.nfs ] && rm -f /sbin/mount.nfs
+[ -f /bin/dialog ] && rm -f /bin/dialog
 
 exit 0

@@ -1,0 +1,22 @@
+=head2 Thu Feb 12 13:15:24 2015: C<Module> L<mytop|mytop>
+
+=over 4
+
+=item *
+
+C<installed into: /mnt/HD/HD_a2/Nas_Prog/term-utils/share/perl/5.10>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.6>
+
+=item *
+
+C<EXE_FILES: mytop>
+
+=back
+
