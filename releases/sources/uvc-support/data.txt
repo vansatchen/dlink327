@@ -1,0 +1,15 @@
+insmod input-core.ko
+insmod videodev.ko
+insmod uvcvideo.ko
+insmod v4l2-common.ko
+#insmod soundcore.ko
+#insmod snd.ko
+#insmod snd-hwdep.ko
+#insmod snd-page-alloc.ko
+#insmod snd-rawmidi.ko
+#insmod snd-timer.ko
+#insmod snd-pcm.ko
+#insmod snd-usbmidi-lib.ko
+#insmod snd-usb-audio.ko
+
+ffmpeg -f v4l2 -i /dev/video0 -vcodec copy -acodec copy -t 00:30:00 test2.avi
