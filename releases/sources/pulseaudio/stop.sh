@@ -1,6 +1,5 @@
 #!/bin/sh
 
-#remove links
-pulseaudio -k
+kill `ps -e | grep pulse | grep -v grep | awk '{print $1}'`
 
 exit 0
