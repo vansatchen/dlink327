@@ -52,3 +52,6 @@ load-module module-suspend-on-idle
 
 ### Enable positioned event sounds
 load-module module-position-event-sounds
+
+### Enable lan
+load-module module-native-protocol-tcp auth-ip-acl=0.0.0.0/0;127.0.0.0/8
