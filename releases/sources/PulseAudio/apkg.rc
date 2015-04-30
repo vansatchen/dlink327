@@ -1,0 +1,13 @@
+Package:          PulseAudio
+Version:          6.0.0-3
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    PulseAudio
+AddonIndexPage:   
+AddonUsedPort:     
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      Sound server.
