@@ -1,0 +1,13 @@
+Package:          MPD
+Version:          0.19.8-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    MPD
+AddonIndexPage:   
+AddonUsedPort:     
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      Server-side application for playing music.
