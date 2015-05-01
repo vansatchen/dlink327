@@ -1,4 +1,4 @@
-sw_volume: 0
+sw_volume: 58
 audio_device_state:1:MPD PulseAudio Output
 state: stop
 current: 0
@@ -11,4 +11,5 @@ mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
 0:Track No05.mp4
+1:Keine Lust.mp3
 playlist_end
