@@ -32,4 +32,15 @@ ln -s $path/bin/parecord /bin/
 ln -s $path/bin/pasuspender /bin/
 ln -s $path/bin/pulseaudio /bin/
 
+[ -f /lib/libFLAC.so.8 ] || ln -s $path/lib/libFLAC.so.8 /lib/
+[ -f /lib/libwrap.so.0 ] || ln -s $path/lib/libwrap.so.0 /lib/
+[ -f /lib/libvorbis.so.0 ] || ln -s $path/lib/libvorbis.so.0 /lib/
+[ -f /lib/libogg.so.0 ] || ln -s $path/lib/libogg.so.0 /lib/
+[ -f /lib/libsndfile.so.1 ] || ln -s $path/lib/libsndfile.so.1 /lib/
+[ -f /lib/libasound.so.2 ] || ln -s $path/lib/libasound.so.2 /lib/
+[ -f /lib/libpulse.so.0 ] || ln -s $path/lib/libpulse.so.0 /lib/
+[ -f /lib/libvorbisenc.so.2 ] || ln -s $path/lib/libvorbisenc.so.2 /lib/
+
+[ -f /var/www/PulseAudio ] && rm -f /var/www/PulseAudio || ln -s $path/web /var/www/PulseAudio
+
 exit 0

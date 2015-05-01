@@ -10,13 +10,13 @@
       <name>PulseAudio</name>
       <show>PulseAudio</show>
       <enable>0</enable>
-      <version>6.0.0-3</version>
-      <date>20150430</date>
+      <version>6.0.0-4</version>
+      <date>20150501</date>
       <inst_date/>
       <path/>
       <ps_name/>
-      <url/>
-      <url_port/>
+      <url>index.html</url>
+      <url_port>80</url_port>
       <apkg_version>2</apkg_version>
       <packager>rusatch</packager>
       <email>rusatch@mail.ru</email>
