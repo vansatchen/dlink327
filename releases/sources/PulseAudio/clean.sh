@@ -29,5 +29,7 @@ rm -f /lib/libsndfile.so.1
 rm -f /lib/libvorbisenc.so.2
 rm -f /lib/libvorbis.so.0
 rm -f /lib/libwrap.so.0
+rm -f /lib/libasound.so.2
+rm -f /lib/libpulse.so.0
 
 exit 0

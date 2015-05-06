@@ -40,6 +40,8 @@ ln -s $path/bin/pulseaudio /bin/
 [ -f /lib/libasound.so.2 ] || ln -s $path/lib/libasound.so.2 /lib/
 [ -f /lib/libpulse.so.0 ] || ln -s $path/lib/libpulse.so.0 /lib/
 [ -f /lib/libvorbisenc.so.2 ] || ln -s $path/lib/libvorbisenc.so.2 /lib/
+[ -f /lib/libjson-c.so.2 ] || ln -s $path/lib/libjson-c.so.2 /lib/
+[ -f /lib/libgdbm.so.3 ] || ln -s $path/lib/libgdbm.so.3 /lib/
 
 [ -f /var/www/PulseAudio ] && rm -f /var/www/PulseAudio || ln -s $path/web /var/www/PulseAudio
 
