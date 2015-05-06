@@ -1,0 +1,13 @@
+Package:          eSpeak
+Version:          1.48.03-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    eSpeak
+AddonIndexPage:   
+AddonUsedPort:     
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      Compact open source software speech synthesizer.
