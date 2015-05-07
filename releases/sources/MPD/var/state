@@ -1,7 +1,8 @@
-sw_volume: 58
+sw_volume: 17
 audio_device_state:1:MPD PulseAudio Output
-state: stop
-current: 0
+state: pause
+current: 4
+time: 82.314000
 random: 0
 repeat: 0
 single: 0
@@ -10,6 +11,14 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Track No05.mp4
-1:Keine Lust.mp3
+0:Joe Satriani/1992 - The Extremist/01. Friends.mp3
+1:Joe Satriani/1992 - The Extremist/02. The Extremist.mp3
+2:Joe Satriani/1992 - The Extremist/03. War.mp3
+3:Joe Satriani/1992 - The Extremist/04. Cryin'.mp3
+4:Joe Satriani/1992 - The Extremist/05. Rubina's Blue Sky Happiness.mp3
+5:Joe Satriani/1992 - The Extremist/06. Summer Song.mp3
+6:Joe Satriani/1992 - The Extremist/07. Tears in the Rain.mp3
+7:Joe Satriani/1992 - The Extremist/08. Why.mp3
+8:Joe Satriani/1992 - The Extremist/09. Motorcycle Driver.mp3
+9:Joe Satriani/1992 - The Extremist/10. New Blues.mp3
 playlist_end

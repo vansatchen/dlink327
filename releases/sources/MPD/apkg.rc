@@ -1,11 +1,11 @@
 Package:          MPD
-Version:          0.19.8-1
+Version:          0.19.8-2
 Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         
 AddonShowName:    MPD
-AddonIndexPage:   
-AddonUsedPort:     
+AddonIndexPage:   index.html
+AddonUsedPort:    80
 InstDepend:
 InstConflict:             
 StartDepend:       
