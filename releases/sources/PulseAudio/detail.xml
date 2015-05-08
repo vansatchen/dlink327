@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <apkg>
+    <item>
+      <show>PulseAudio</show>
+      <name>PulseAudio</name>
+      <category>sound</category>
+      <description/>
+      <version>Version: 6.0.0-6</version>
+      <update>Update: 2015/05/08</update>
+      <size>Size: 6.64 MB</size>
+      <developer>Developer: </developer>
+      <website/>
+      <forum/>
+      <platform>327L/DNS-327L PulseAudio Package v6.0.0-6_05082015</platform>
+      <screenshot/>
+    </item>
+  </apkg>
+</config>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <apkg>
+    <item>
+      <show>term-utils</show>
+      <name>term-utils</name>
+      <category/>
+      <description/>
+      <version>Version: 1.3-5</version>
+      <update>Update: 2015/05/08</update>
+      <size>Size: 1.46 MB</size>
+      <developer>Developer: </developer>
+      <website/>
+      <forum/>
+      <platform>327L/DNS-327L term-utils Package v1.3-5_05082015</platform>
+      <screenshot/>
+    </item>
+  </apkg>
+</config>

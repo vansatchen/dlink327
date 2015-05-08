@@ -10,8 +10,8 @@
       <name>PulseAudio</name>
       <show>PulseAudio</show>
       <enable>0</enable>
-      <version>6.0.0-5</version>
-      <date>20150506</date>
+      <version>6.0.0-6</version>
+      <date>20150508</date>
       <inst_date/>
       <path/>
       <ps_name/>
@@ -25,6 +25,8 @@
       <inst_conflict/>
       <start_depend/>
       <start_conflict/>
+      <description>Sound server.</description>
+      <icon/>
     </item>
   </apkg>
 </config>

@@ -1,5 +1,6 @@
 Package:          PulseAudio
-Version:          6.0.0-5
+Section: 	  sound
+Version:          6.0.0-6
 Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         
@@ -11,3 +12,4 @@ InstConflict:
 StartDepend:       
 StartConflict:
 Description:      Sound server.
+Category: 	  sound
