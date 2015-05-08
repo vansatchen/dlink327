@@ -14,5 +14,7 @@ done
 [ -f /sbin/mount.nfs ] && rm -f /sbin/mount.nfs
 [ -f /bin/dialog ] && rm -f /bin/dialog
 [ -f /bin/clear ] && rm -f /bin/clear
+[ -f /bin/lshw ] && rm -f /bin/lshw
+[ -f /bin/strace ] && rm -f /bin/strace
 
 exit 0
