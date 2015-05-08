@@ -9,5 +9,6 @@
 [ -f /bin/clear ] && rm -f /bin/clear
 [ -f /bin/lshw ] && rm -f /bin/lshw
 [ -f /bin/strace ] && rm -f /bin/strace
+[ -f /bin/fdupes ] && rm -f /bin/fdupes
 
 exit 0

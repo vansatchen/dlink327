@@ -10,5 +10,6 @@ ln -s $path/bin/dialog /bin/
 ln -s $path/bin/clear /bin/
 ln -s $path/bin/lshw /bin/
 ln -s $path/bin/strace /bin/
+ln -s $path/bin/fdupes /bin/
 
 exit 0

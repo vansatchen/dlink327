@@ -9,5 +9,6 @@ rm -f /bin/dialog
 rm -f /bin/clear
 rm -f /bin/lshw
 rm -f /bin/strace
+rm -f /bin/fdupes
 
 exit 0
