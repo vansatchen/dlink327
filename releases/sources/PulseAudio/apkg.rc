@@ -13,3 +13,7 @@ StartDepend:
 StartConflict:
 Description:      Sound server.
 Category: 	  sound
+Screenshot: 	  PulseAudio-s.png
+Website: 	  http://www.freedesktop.org/wiki/Software/PulseAudio/
+Platform: 	  http://storage.dlink.com.tw/addon/
+DescriptionOnline: PulseAudio is a sound system for POSIX OSes, meaning that it is a proxy for your sound applications. It allows you to do advanced operations on your sound data as it passes between your application and your hardware. Things like transferring the audio to a different machine, changing the sample format or channel count and mixing several sounds into one are easily achieved using a sound server.

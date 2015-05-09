@@ -5,15 +5,15 @@
       <show>PulseAudio</show>
       <name>PulseAudio</name>
       <category>sound</category>
-      <description/>
+      <description>PulseAudio is a sound system for POSIX OSes, meaning that it is a proxy for your sound applications. It allows you to do advanced operations on your sound data as it passes between your application and your hardware. Things like transferring the audio to a different machine, changing the sample format or channel count and mixing several sounds into one are easily achieved using a sound server.</description>
       <version>Version: 6.0.0-6</version>
-      <update>Update: 2015/05/08</update>
-      <size>Size: 6.64 MB</size>
+      <update>Update: 2015/05/09</update>
+      <size>Size: 6.80 MB</size>
       <developer>Developer: </developer>
-      <website/>
+      <website>http://www.freedesktop.org/wiki/Software/PulseAudio/</website>
       <forum/>
-      <platform>327L/DNS-327L PulseAudio Package v6.0.0-6_05082015</platform>
-      <screenshot/>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L PulseAudio Package v6.0.0-6_05092015</platform>
+      <screenshot>PulseAudio-s.png</screenshot>
     </item>
   </apkg>
 </config>
