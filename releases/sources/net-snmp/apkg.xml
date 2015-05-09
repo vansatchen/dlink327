@@ -10,12 +10,12 @@
       <name>net-snmp</name>
       <show>net-snmp</show>
       <enable>0</enable>
-      <version>5.7.3-0</version>
-      <date>20150125</date>
+      <version>5.7.3-1</version>
+      <date>20150509</date>
       <inst_date/>
       <path/>
       <ps_name/>
-      <url/>
+      <url>NULL</url>
       <url_port/>
       <apkg_version>2</apkg_version>
       <packager>rusatch</packager>
@@ -25,6 +25,8 @@
       <inst_conflict/>
       <start_depend/>
       <start_conflict/>
+      <description>Simple Network Management Protocol</description>
+      <icon/>
     </item>
   </apkg>
 </config>

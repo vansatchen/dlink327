@@ -5,10 +5,15 @@ Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         
 AddonShowName:    term-utils
-AddonIndexPage:   
+AddonIndexPage:   NULL
 AddonUsedPort:     
 InstDepend:
 InstConflict:             
 StartDepend:       
 StartConflict:
 Description:      Some cool utils for OS.
+Category:         system
+Screenshot:       term-utils-s.png
+Website:
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: Some cool utils for OS.

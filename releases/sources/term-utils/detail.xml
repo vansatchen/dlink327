@@ -4,16 +4,16 @@
     <item>
       <show>term-utils</show>
       <name>term-utils</name>
-      <category/>
-      <description/>
+      <category>system</category>
+      <description>Some cool utils for OS.</description>
       <version>Version: 1.3-5</version>
-      <update>Update: 2015/05/08</update>
-      <size>Size: 1.46 MB</size>
+      <update>Update: 2015/05/09</update>
+      <size>Size: 1.66 MB</size>
       <developer>Developer: </developer>
       <website/>
       <forum/>
-      <platform>327L/DNS-327L term-utils Package v1.3-5_05082015</platform>
-      <screenshot/>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L term-utils Package v1.3-5_05092015</platform>
+      <screenshot>term-utils-s.png</screenshot>
     </item>
   </apkg>
 </config>

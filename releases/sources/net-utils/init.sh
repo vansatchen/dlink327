@@ -16,4 +16,6 @@ done
 [ -f /bin/nethogs ] && rm -f /bin/nethogs
 [ -f /bin/ngrep ] && rm -f /bin/ngrep
 
+ln -s $path/web /var/www/net-utils
+
 exit 0

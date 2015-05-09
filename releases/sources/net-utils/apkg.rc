@@ -1,13 +1,19 @@
 Package:          net-utils
-Version:          1.2-0
+Section:	  network
+Version:          1.2-1
 Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         
 AddonShowName:    net-utils
-AddonIndexPage:   
+AddonIndexPage:   NULL
 AddonUsedPort:     
 InstDepend:
 InstConflict:             
 StartDepend:       
 StartConflict:
 Description:      Some cool utils for net.
+Category:         network
+Screenshot:       net-utils-s.png
+Website:
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: Some cool utils for net.

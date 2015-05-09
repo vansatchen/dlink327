@@ -1,13 +1,19 @@
 Package:          uvc-support
-Version:          1.0-0
+Section:          video
+Version:          1.0-1
 Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         
 AddonShowName:    uvc-support
-AddonIndexPage:   
+AddonIndexPage:   NULL
 AddonUsedPort:     
 InstDepend:
 InstConflict:             
 StartDepend:       
 StartConflict:
 Description:      Support for uvc-web-cameras.
+Category:         video
+Screenshot:       
+Website:
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: Support for uvc-web-cameras.

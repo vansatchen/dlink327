@@ -18,4 +18,6 @@ done
 [ -f /bin/strace ] && rm -f /bin/strace
 [ -f /bin/fdupes ] && rm -f /bin/fdupes
 
+ln -s $path/web /var/www/term-utils
+
 exit 0
