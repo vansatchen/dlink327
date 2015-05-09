@@ -10,8 +10,8 @@
       <name>MPD</name>
       <show>MPD</show>
       <enable>0</enable>
-      <version>0.19.8-2</version>
-      <date>20150507</date>
+      <version>0.19.8-3</version>
+      <date>20150509</date>
       <inst_date/>
       <path/>
       <ps_name/>
@@ -23,8 +23,10 @@
       <homepage/>
       <inst_depend/>
       <inst_conflict/>
-      <start_depend/>
+      <start_depend>PulseAudio</start_depend>
       <start_conflict/>
+      <description>Server-side application for playing music.</description>
+      <icon/>
     </item>
   </apkg>
 </config>
