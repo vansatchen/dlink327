@@ -1,5 +1,6 @@
 Package:          CamRec
-Version:          2.2-0
+Section:          video
+Version:          2.3-0
 Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         
@@ -11,3 +12,8 @@ InstConflict:
 StartDepend:       
 StartConflict:
 Description:      Record stream from mjpg-camera.
+Category:         video
+Screenshot:       CamRec-s.png
+Website:          
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: Video-recording from ip-cams.
