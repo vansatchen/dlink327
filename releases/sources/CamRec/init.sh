@@ -10,7 +10,8 @@ done
 
 [ -f /bin/ffmpeg ] && rm -f /bin/ffmpeg
 [ -f /bin/camrec ] && rm -f /bin/camrec
-
+ln -s $path/bin/ffmpeg /bin/
+ln -s $path/bin/camrec /bin/
 ln -s $path/web /var/www/CamRec
 
 exit 0
