@@ -1,6 +1,6 @@
 Package:          term-utils
-Section: 	  network
-Version:          1.3-5
+Section: 	  system
+Version:          1.3-6
 Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         

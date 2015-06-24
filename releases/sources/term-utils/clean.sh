@@ -10,5 +10,6 @@ rm -f /bin/clear
 rm -f /bin/lshw
 rm -f /bin/strace
 rm -f /bin/fdupes
+rm -f /bin/pv
 
 exit 0

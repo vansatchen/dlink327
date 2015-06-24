@@ -10,5 +10,6 @@
 [ -f /bin/lshw ] && rm -f /bin/lshw
 [ -f /bin/strace ] && rm -f /bin/strace
 [ -f /bin/fdupes ] && rm -f /bin/fdupes
+[ -f /bin/pv ] && rm -f /bin/pv
 
 exit 0
