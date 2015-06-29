@@ -10,8 +10,8 @@
       <name>net-snmp</name>
       <show>net-snmp</show>
       <enable>0</enable>
-      <version>5.7.3-1</version>
-      <date>20150509</date>
+      <version>5.7.3-2</version>
+      <date>20150629</date>
       <inst_date/>
       <path/>
       <ps_name/>

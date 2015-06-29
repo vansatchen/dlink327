@@ -6,13 +6,13 @@
       <name>CamRec</name>
       <category>video</category>
       <description>Video-recording from ip-cams.</description>
-      <version>Version: 2.3-1</version>
-      <update>Update: 2015/05/14</update>
-      <size>Size: 6.05 MB</size>
+      <version>Version: 2.3-2</version>
+      <update>Update: 2015/06/29</update>
+      <size>Size: 6.09 MB</size>
       <developer>Developer: </developer>
       <website/>
       <forum/>
-      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L CamRec Package v2.3-1_05142015</platform>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L CamRec Package v2.3-2_06292015</platform>
       <screenshot>CamRec-s.png</screenshot>
     </item>
   </apkg>

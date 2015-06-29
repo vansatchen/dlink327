@@ -6,13 +6,13 @@
       <name>net-utils</name>
       <category>network</category>
       <description>Some cool utils for net.</description>
-      <version>Version: 1.2-1</version>
-      <update>Update: 2015/05/09</update>
-      <size>Size: 2.33 MB</size>
+      <version>Version: 1.2-2</version>
+      <update>Update: 2015/06/29</update>
+      <size>Size: 2.37 MB</size>
       <developer>Developer: </developer>
       <website/>
       <forum/>
-      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L net-utils Package v1.2-1_05092015</platform>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L net-utils Package v1.2-2_06292015</platform>
       <screenshot>net-utils-s.png</screenshot>
     </item>
   </apkg>

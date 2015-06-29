@@ -6,13 +6,13 @@
       <name>net-snmp</name>
       <category>network</category>
       <description>Simple Network Management Protocol (SNMP) is a widely used protocol for monitoring the health and welfare of network equipment (eg. routers), computer equipment and even devices like UPSs. Net-SNMP is a suite of applications used to implement SNMP v1, SNMP v2c and SNMP v3 using both IPv4 and IPv6.</description>
-      <version>Version: 5.7.3-1</version>
-      <update>Update: 2015/05/09</update>
-      <size>Size: 3.42 MB</size>
+      <version>Version: 5.7.3-2</version>
+      <update>Update: 2015/06/29</update>
+      <size>Size: 3.44 MB</size>
       <developer>Developer: </developer>
       <website>http://www.net-snmp.org</website>
       <forum/>
-      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L net-snmp Package v5.7.3-1_05092015</platform>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L net-snmp Package v5.7.3-2_06292015</platform>
       <screenshot>net-snmp-s.png</screenshot>
     </item>
   </apkg>

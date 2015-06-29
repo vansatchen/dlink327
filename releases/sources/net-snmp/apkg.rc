@@ -1,6 +1,6 @@
 Package:          net-snmp
 Section:          network
-Version:          5.7.3-1
+Version:          5.7.3-2
 Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         
