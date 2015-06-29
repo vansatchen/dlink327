@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <apkg>
+    <item>
+      <show>Twonky</show>
+      <name>Twonky</name>
+      <category>network</category>
+      <description>TwonkyMedia server (TMS) is DLNA-compliant UPnP AV server software from PacketVideo.</description>
+      <version>Version: 8.0.2-1</version>
+      <update>Update: 2015/06/29</update>
+      <size>Size: 3.59 MB</size>
+      <developer>Developer: </developer>
+      <website>http://twonky.com</website>
+      <forum/>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L Twonky Package v8.0.2-1_06292015</platform>
+      <screenshot>Twonky-s.png</screenshot>
+    </item>
+  </apkg>
+</config>

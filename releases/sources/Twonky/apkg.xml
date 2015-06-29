@@ -10,8 +10,8 @@
       <name>Twonky</name>
       <show>Twonky</show>
       <enable>0</enable>
-      <version>8.0.2-0</version>
-      <date>20150130</date>
+      <version>8.0.2-1</version>
+      <date>20150629</date>
       <inst_date/>
       <path/>
       <ps_name/>
@@ -25,6 +25,8 @@
       <inst_conflict/>
       <start_depend/>
       <start_conflict/>
+      <description>TwonkyMedia server</description>
+      <icon/>
     </item>
   </apkg>
 </config>

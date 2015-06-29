@@ -1,7 +1,6 @@
-Product:	DNS-327
 Package:	Twonky
 Section:	Addon
-Version:	8.0.2-0
+Version:	8.0.2-1
 Packager:	rusatch
 Email:		rusatch@mail.ru
 Homepage:	
@@ -13,3 +12,8 @@ InstDepend:
 InstConflict:
 StartDepend:
 StartConflict:
+Category:         network
+Screenshot:       Twonky-s.png
+Website:	  http://twonky.com
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: TwonkyMedia server (TMS) is DLNA-compliant UPnP AV server software from PacketVideo.
