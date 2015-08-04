@@ -1,0 +1,19 @@
+Package:          pl2303-support
+Section:          system
+Version:          1.0-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    pl2303-support
+AddonIndexPage:   NULL
+AddonUsedPort:     
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      Support for Prolific usb-serial converter.
+Category:         system
+Screenshot:       
+Website:
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: Support for Prolific usb-serial converter.
