@@ -1,0 +1,19 @@
+Package:          usbserial-support
+Section:          usb
+Version:          1.0-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    usbserial-support
+AddonIndexPage:   NULL
+AddonUsedPort:     
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      Support for usbserial converters.
+Category:         usb
+Screenshot:       
+Website:
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: Support for usbserial converters.

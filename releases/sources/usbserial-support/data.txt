@@ -1,0 +1,2 @@
+insmod usbserial.ko
+insmod pl2303.ko
