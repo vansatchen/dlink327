@@ -6,13 +6,13 @@
       <name>uvc-support</name>
       <category>video</category>
       <description>Support for uvc-web-cameras.</description>
-      <version>Version: 1.0-1</version>
-      <update>Update: 2015/05/09</update>
-      <size>Size: 0.26 MB</size>
+      <version>Version: 1.1-0</version>
+      <update>Update: 2015/09/26</update>
+      <size>Size: 0.27 MB</size>
       <developer>Developer: </developer>
       <website/>
       <forum/>
-      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L uvc-support Package v1.0-1_05092015</platform>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L uvc-support Package v1.1-0_09262015</platform>
       <screenshot/>
     </item>
   </apkg>
