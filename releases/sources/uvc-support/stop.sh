@@ -1,9 +1,10 @@
 #!/bin/sh
 
 #remove modules
-rmmod input-core
-rmmod videodev
-rmmod uvcvideo
+rmmod v4l2-int-device
 rmmod v4l2-common
+rmmod uvcvideo
+rmmod videodev.ko
+rmmod input-core.ko
 
 exit 0

@@ -13,5 +13,6 @@ insmod $path/$modulespath/input-core.ko
 insmod $path/$modulespath/videodev.ko
 insmod $path/$modulespath/uvcvideo.ko
 insmod $path/$modulespath/v4l2-common.ko
+insmod $path/$modulespath/v4l2-int-device.ko
 
 exit 0
