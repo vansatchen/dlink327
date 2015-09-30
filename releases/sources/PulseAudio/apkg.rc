@@ -1,6 +1,6 @@
 Package:          PulseAudio
 Section: 	  sound
-Version:          6.0.0-6
+Version:          7.0.0-0
 Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         

@@ -1,4 +1,4 @@
-#!/mnt/HD/HD_a2/Nas_Prog/pulseaudio/bin/pulseaudio -nF
+#!/mnt/HD/HD_a2/Nas_Prog/PulseAudio/bin/pulseaudio -nF
 #
 # This file is part of PulseAudio.
 #
@@ -51,10 +51,10 @@ load-module module-switch-on-port-available
 #load-module module-pipe-sink
 
 ### Automatically load driver modules depending on the hardware available
-#.ifexists module-detect.so
+.ifexists module-detect.so
 ### Use the static hardware detection module (for systems that lack udev support)
-#load-module module-detect
-#.endif
+load-module module-detect
+.endif
 
 ### Automatically connect sink and source if JACK server is present
 .ifexists module-jackdbus-detect.so
@@ -74,6 +74,7 @@ load-module module-native-protocol-unix
 ### here if you plan to use paprefs)
 #load-module module-esound-protocol-tcp
 #load-module module-native-protocol-tcp
+#load-module module-zeroconf-publish
 
 ### Load the RTP receiver module (also configured via paprefs, see above)
 #load-module module-rtp-recv
@@ -112,9 +113,9 @@ load-module module-suspend-on-idle
 
 ### If autoexit on idle is enabled we want to make sure we only quit
 ### when no local session needs us anymore.
-#.ifexists module-console-kit.so
-#load-module module-console-kit
-#.endif
+.ifexists module-console-kit.so
+load-module module-console-kit
+.endif
 .ifexists module-systemd-login.so
 load-module module-systemd-login
 .endif
@@ -136,5 +137,3 @@ load-module module-filter-apply
 ### Make some devices default
 #set-default-sink output
 #set-default-source input
-
-load-module module-native-protocol-tcp auth-ip-acl=0.0.0.0/0;127.0.0.0/8

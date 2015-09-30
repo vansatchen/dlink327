@@ -1,4 +1,4 @@
-#!/mnt/HD/HD_a2/Nas_Prog/pulseaudio/bin/pulseaudio -nF
+#!/mnt/HD/HD_a2/Nas_Prog/PulseAudio/bin/pulseaudio -nF
 #
 # This file is part of PulseAudio.
 #
@@ -58,5 +58,3 @@ load-module module-native-protocol-tcp auth-ip-acl=0.0.0.0/0;127.0.0.0/8
 
 ### Publish local soundcards on the network
 load-module module-zeroconf-publish
-
-#load-module module-alsa-sink device=hw:0
