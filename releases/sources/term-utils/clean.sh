@@ -11,5 +11,7 @@ rm -f /bin/lshw
 rm -f /bin/strace
 rm -f /bin/fdupes
 rm -f /bin/pv
+rm -f /bin/mysqlcheck
+rm -f /bin/mysqldump
 
 exit 0

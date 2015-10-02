@@ -12,5 +12,7 @@ ln -s $path/bin/lshw /bin/
 ln -s $path/bin/strace /bin/
 ln -s $path/bin/fdupes /bin/
 ln -s $path/bin/pv /bin/
+ln -s $path/bin/mysqlcheck /bin/
+ln -s $path/bin/mysqldump /bin/
 
 exit 0

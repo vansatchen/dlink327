@@ -1,0 +1,5 @@
+#!/bin/sh
+
+mysqlcheckcommand="/mnt/HD/HD_a2/Nas_Prog/term-utils/bin/mycheck -S /tmp/mysql.sock -u root -pXP4VddgD0zd8IbKQ"
+
+[ $# -eq "0" ] && $mysqlcheckcommand --help || $mysqlcheckcommand "$@"

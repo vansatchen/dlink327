@@ -11,5 +11,7 @@
 [ -f /bin/strace ] && rm -f /bin/strace
 [ -f /bin/fdupes ] && rm -f /bin/fdupes
 [ -f /bin/pv ] && rm -f /bin/pv
+[ -f /bin/mysqlcheck ] && rm -f /bin/mysqlcheck
+[ -f /bin/mysqldump ] && rm -f /bin/mysqldump
 
 exit 0
