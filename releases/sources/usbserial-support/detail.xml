@@ -6,13 +6,13 @@
       <name>usbserial-support</name>
       <category>usb</category>
       <description>Support for usbserial converters.</description>
-      <version>Version: 1.0-0</version>
-      <update>Update: 2015/09/27</update>
-      <size>Size: 0.05 MB</size>
+      <version>Version: 1.1-0</version>
+      <update>Update: 2015/10/03</update>
+      <size>Size: 0.07 MB</size>
       <developer>Developer: </developer>
       <website/>
       <forum/>
-      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L usbserial-support Package v1.0-0_09272015</platform>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L usbserial-support Package v1.1-0_10032015</platform>
       <screenshot/>
     </item>
   </apkg>
