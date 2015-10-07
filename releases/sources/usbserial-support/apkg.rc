@@ -1,6 +1,6 @@
 Package:          usbserial-support
 Section:          usb
-Version:          1.1-0
+Version:          1.1-1
 Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         
