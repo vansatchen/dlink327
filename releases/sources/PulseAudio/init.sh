@@ -11,27 +11,27 @@ path=$1
 [ -f /bin/pasuspender ] && rm -f /bin/pasuspender
 [ -f /bin/pulseaudio ] && rm -f /bin/pulseaudio
 
-#KVERS=`uname -r`
-insmod $path/modules/soundcore.ko
-insmod $path/modules/snd.ko
-insmod $path/modules/snd-hwdep.ko
-insmod $path/modules/snd-page-alloc.ko
-insmod $path/modules/snd-rawmidi.ko
-insmod $path/modules/snd-timer.ko
-insmod $path/modules/snd-pcm.ko
-insmod $path/modules/snd-usbmidi-lib.ko
-insmod $path/modules/snd-usb-audio.ko
+KVERS=`uname -r`
+#insmod $path/modules/soundcore.ko
+#insmod $path/modules/snd.ko
+#insmod $path/modules/snd-hwdep.ko
+#insmod $path/modules/snd-page-alloc.ko
+#insmod $path/modules/snd-rawmidi.ko
+#insmod $path/modules/snd-timer.ko
+#insmod $path/modules/snd-pcm.ko
+#insmod $path/modules/snd-usbmidi-lib.ko
+#insmod $path/modules/snd-usb-audio.ko
 
-#[ $KVERS == "3.2.34" ] && modulespath=modules-3.2.34 || modulespath=modules
-#insmod $path/$modulespath/soundcore.ko
-#insmod $path/$modulespath/snd.ko
-#insmod $path/$modulespath/snd-hwdep.ko
-#insmod $path/$modulespath/snd-page-alloc.ko
-#insmod $path/$modulespath/snd-rawmidi.ko
-#insmod $path/$modulespath/snd-timer.ko
-#insmod $path/$modulespath/snd-pcm.ko
-#insmod $path/$modulespath/snd-usbmidi-lib.ko
-#insmod $path/$modulespath/snd-usb-audio.ko
+[ $KVERS == "3.2.34" ] && modulespath=modules-3.2.34 || modulespath=modules
+insmod $path/$modulespath/soundcore.ko
+insmod $path/$modulespath/snd.ko
+insmod $path/$modulespath/snd-hwdep.ko
+insmod $path/$modulespath/snd-page-alloc.ko
+insmod $path/$modulespath/snd-rawmidi.ko
+insmod $path/$modulespath/snd-timer.ko
+insmod $path/$modulespath/snd-pcm.ko
+insmod $path/$modulespath/snd-usbmidi-lib.ko
+insmod $path/$modulespath/snd-usb-audio.ko
 
 ln -s $path/etc/pulse /etc/
 
