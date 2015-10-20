@@ -13,5 +13,6 @@ rm -f /bin/fdupes
 rm -f /bin/pv
 rm -f /bin/mysqlcheck
 rm -f /bin/mysqldump
+rm -f /bin/tmux
 
 exit 0

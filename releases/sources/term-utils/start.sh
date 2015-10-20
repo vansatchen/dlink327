@@ -14,5 +14,6 @@ ln -s $path/bin/fdupes /bin/
 ln -s $path/bin/pv /bin/
 ln -s $path/bin/mysqlcheck /bin/
 ln -s $path/bin/mysqldump /bin/
+ln -s $path/bin/tmux /bin/
 
 exit 0

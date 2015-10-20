@@ -20,6 +20,7 @@ done
 [ -f /bin/pv ] && rm -f /bin/pv
 [ -f /bin/mysqlcheck ] && rm -f /bin/mysqlcheck
 [ -f /bin/mysqldump ] && rm -f /bin/mysqldump
+[ -f /bin/tmux ] && rm -f /bin/tmux
 
 ln -s $path/web /var/www/term-utils
 

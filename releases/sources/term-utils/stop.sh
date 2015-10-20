@@ -13,5 +13,6 @@
 [ -f /bin/pv ] && rm -f /bin/pv
 [ -f /bin/mysqlcheck ] && rm -f /bin/mysqlcheck
 [ -f /bin/mysqldump ] && rm -f /bin/mysqldump
+[ -f /bin/tmux ] && rm -f /bin/tmux
 
 exit 0
