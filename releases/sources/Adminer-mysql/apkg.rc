@@ -1,0 +1,19 @@
+Package:          Adminer-mysql
+Version:          4.2.2-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    Adminer-mysql
+AddonIndexPage:   index.html
+AddonUsedPort:    80
+InstDepend:
+InstConflict:             
+StartDepend:      
+StartConflict:
+Description:      Adminer (formerly phpMinAdmin) is a full-featured database management tool written in PHP.
+Category:         Databases
+Screenshot:       Adminer-mysql-s.png
+Website:          https://www.adminer.org
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: Adminer (formerly phpMinAdmin) is a full-featured database management tool written in PHP.
+
