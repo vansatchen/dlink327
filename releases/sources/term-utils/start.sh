@@ -15,5 +15,7 @@ ln -s $path/bin/pv /bin/
 ln -s $path/bin/mysqlcheck /bin/
 ln -s $path/bin/mysqldump /bin/
 ln -s $path/bin/tmux /bin/
+ln -s $path/bin/nmon /bin/
+ln -s $path/bin/saidar /bin/
 
 exit 0

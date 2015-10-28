@@ -14,5 +14,7 @@ rm -f /bin/pv
 rm -f /bin/mysqlcheck
 rm -f /bin/mysqldump
 rm -f /bin/tmux
+rm -f /bin/nmon
+rm -f /bin/saidar
 
 exit 0

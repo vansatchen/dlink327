@@ -21,6 +21,8 @@ done
 [ -f /bin/mysqlcheck ] && rm -f /bin/mysqlcheck
 [ -f /bin/mysqldump ] && rm -f /bin/mysqldump
 [ -f /bin/tmux ] && rm -f /bin/tmux
+[ -f /bin/nmon ] && rm -f /bin/nmon
+[ -f /bin/saidar ] && rm -f /bin/saidar
 
 ln -s $path/web /var/www/term-utils
 
