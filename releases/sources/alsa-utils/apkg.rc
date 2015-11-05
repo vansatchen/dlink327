@@ -13,7 +13,7 @@ StartDepend:
 StartConflict:
 Description:      Sound server.
 Category:         sound
-Screenshot:       
+Screenshot:       alsa-utils-s.png
 Website:          http://www.alsa-project.org/main/index.php/Main_Page
 Platform:         http://storage.dlink.com.tw/addon/
 DescriptionOnline: The Advanced Linux Sound Architecture (ALSA) provides audio and MIDI functionality to the Linux operating system.

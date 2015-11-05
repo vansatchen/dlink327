@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <apkg>
+    <item>
+      <show>alsa-utils</show>
+      <name>alsa-utils</name>
+      <category>sound</category>
+      <description>The Advanced Linux Sound Architecture (ALSA) provides audio and MIDI functionality to the Linux operating system.</description>
+      <version>Version: 1.0.29-0</version>
+      <update>Update: 2015/11/05</update>
+      <size>Size: 2.84 MB</size>
+      <developer>Developer: </developer>
+      <website>http://www.alsa-project.org/main/index.php/Main_Page</website>
+      <forum/>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L alsa-utils Package v1.0.29-0_11052015</platform>
+      <screenshot>alsa-utils-s.png</screenshot>
+    </item>
+  </apkg>
+</config>
