@@ -1,0 +1,35 @@
+#sources input[type="range"]{
+	height: 40px;
+	width: 99%;
+	margin: 0;
+	vertical-align:middle;
+	border: 0;
+}
+#sources input[type="text"]{
+	width: 3em;
+	text-align:center;
+	vertical-align:middle;
+}
+#sources input[type="checkbox"]{
+	vertical-align:middle;
+	float:right;
+	transform: scale(1.5);
+}
+#sources .inputsource{
+	background-color: #d3d9c6;
+}
+#sources div{
+	padding:2px 0;
+}
+#sources div span{
+	padding: 10px 0;
+	display: block;
+}
+#sources {
+	padding-right: 30px;
+	padding-left: 5px;
+}
+body{
+	margin:0;
+	padding:0;
+}

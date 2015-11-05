@@ -2,9 +2,10 @@
 
 path=$1
 
-ln -s $path/bin/amixer /bin/
-ln -s $path/bin/aplay /bin/
-ln -s $path/bin/arecord /bin/
-ln -s $path/bin/speaker-test /bin/
+BINCONS=`ls $path/bin/`
+
+for BINA in $BINCONS; do
+        [ ! -f /bin/$BINA ] && ln -s $path/bin/$BINA /bin/
+done
 
 exit 0
