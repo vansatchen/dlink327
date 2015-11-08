@@ -1,4 +1,4 @@
 #!/bin/sh
-LD_LIBRARY_PATH=/mnt/HD/HD_a2/Nas_Prog/alsa-utils/lib /mnt/HD/HD_a2/Nas_Prog/alsa-utils/sbin/alsamixer-orig
+LD_LIBRARY_PATH=/mnt/HD/HD_a2/Nas_Prog/alsa-utils/lib /mnt/HD/HD_a2/Nas_Prog/alsa-utils/sbin/alsamixer-orig $@
 
 exit 0
