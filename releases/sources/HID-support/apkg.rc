@@ -1,0 +1,19 @@
+Package:          HID-support
+Section:          usb
+Version:          1.0-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    HID-support
+AddonIndexPage:   index.html
+AddonUsedPort:    80
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      Addon for usb-mouse and usb-keyboard support.
+Category:         usb
+Screenshot:       HID-support-s.png
+Website:          
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: Addon for usb-mouse and usb-keyboard support.

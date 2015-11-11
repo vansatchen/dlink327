@@ -1,0 +1,4 @@
+insmod input_core.ko
+insmod evdev.ko
+insmod hid.ko
+insmod usbhid.ko
