@@ -85,7 +85,7 @@
 				<strong class="label">Num Lock</strong>
 				<div class="onoffswitch">
 					<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="num"  
-					onclick="command('num_pulse')">
+					onclick="if (this.checked) command ('num_on'); else command ('num_off')">
 					<label class="onoffswitch-label" for="num">
 						<div class="onoffswitch-inner">
 							<div class="onoffswitch-active">I</div>

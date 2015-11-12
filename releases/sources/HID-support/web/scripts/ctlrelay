@@ -1,6 +1,6 @@
 #!/bin/sh
 
-KB_LEDS=/dev/event0
+KB_LEDS=/dev/event1
 EV_LED="\0021\0000"
 LED_NUML="\0000\0000"
 LED_CAPSL="\0001\0000"
@@ -26,34 +26,31 @@ fi
 
 case $COMMAND in
         num_on)
-                printf $NUM_ON  > $KB_LEDS;;
+                echo -en $NUM_ON  > $KB_LEDS;;
         num_off)
-                printf $NUM_OFF > $KB_LEDS;;
+                echo -en $NUM_OFF > $KB_LEDS;;
         caps_on)
-        	printf caps_on > /var/rrr
-                printf $CAPS_ON > $KB_LEDS;;
-                
+                echo -en $CAPS_ON > $KB_LEDS;;
         caps_off)
-        	printf caps_off > /var/rrr
-                printf $CAPS_OFF > $KB_LEDS;;
+                echo -en $CAPS_OFF > $KB_LEDS;;
         scroll_on)
-                printf $SCROLL_ON > $KB_LEDS;;
+                echo -en $SCROLL_ON > $KB_LEDS;;
         scroll_off)
-                printf $SCROLL_OFF > $KB_LEDS;;
+                echo -en $SCROLL_OFF > $KB_LEDS;;
         num_pulse)
-                printf $NUM_ON  > $KB_LEDS
+                echo -en $NUM_ON  > $KB_LEDS
                 sleep 1
-                printf $NUM_OFF > $KB_LEDS
+                echo -en $NUM_OFF > $KB_LEDS
                 ;;
         caps_pulse)
-                printf $CAPS_ON > $KB_LEDS
+                echo -en $CAPS_ON > $KB_LEDS
                 sleep 1
-                printf $CAPS_OFF > $KB_LEDS
+                echo -en $CAPS_OFF > $KB_LEDS
                 ;;
         scroll_pulse)
-                printf $SCROLL_ON > $KB_LEDS
+                echo -en $SCROLL_ON > $KB_LEDS
                 sleep 1
-                printf $SCROLL_OFF > $KB_LEDS
+                echo -en $SCROLL_OFF > $KB_LEDS
                 ;;
         *)      WRONG_ARG=1;;
 esac
