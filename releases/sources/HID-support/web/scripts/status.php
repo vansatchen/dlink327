@@ -1,24 +1,22 @@
 <?php 
 
-exec('ps -e | grep ffmpeg | grep -v grep', $outputuptime, $return);
+exec('ls /dev/event*', $outputuptime, $return);
 
 if (!$return) {
-    echo "<b><font color='green'>Running!</font></b>";
+    echo "<b><font color='green'>HID-device founded!</font></b>";
 } else {
-    echo "<b><font color='red'>NOT WORKING!!!</font></b>";
+    echo "<b><font color='red'>HID-device not founded!!!</font></b>";
 }
 
-exec("ps -e | grep ffmpeg | grep -v grep | awk 'NR==1 {print $11,$9,$13,$17,$18}'| sed -e 's#/mnt/HD/HD_b2/smb/cam/##'", $output);
+exec("grep Product -r /proc/bus/usb/devices | grep -i -E 'mouse|keyboard' | sed 's/S:  Product=//g'", $output);
+//exec("grep -i -E 'Product|Manufacturer' -r /proc/bus/usb/devices | sed -r 's/^[^=]+//g' | sed 's/=//g' | sed -r 'N;s/\n/ /'", $output);
+//exec("grep -i -E 'Product|Manufacturer' -r /proc/bus/usb/devices | sed 's/.*=\(.*\)$/\1/g' | sed 'N;s/\n/ /' | grep -E -i 'mouse|keyboard'", $output);
+//exec("grep -i -E 'Product|Manufacturer' -r /proc/bus/usb/devices | sed 'N;s/\n//g'", $output);
 foreach ( $output as $output ) {
-    $status_array=explode(" ", $output);
     echo "<ul>";
-    echo "<li><b>Host:</b>   $status_array[0] <br />";
-    echo "<li><b>FPS:</b>   $status_array[1] <br />";
-    echo "<li><b>Codec:</b>   $status_array[2] <br />";
-    echo "<li><b>Record time:</b>   $status_array[3] <br />";
-    echo "<li><b>File:</b>   $status_array[4] <br />";
+    echo "<li><b>Device:</b>   $output <br />";
     echo "</ul>";
-    echo "<br />";
+//echo $output;
 }
 
 ?>

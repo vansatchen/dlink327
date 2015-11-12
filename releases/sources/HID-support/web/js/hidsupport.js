@@ -5,7 +5,7 @@ function get_hidsupport_info()
 			type: "POST",
 			async: false,
 			cache: false,		
-			data: {cmd:"module_Get_One_Info",f_module_name:'hidsupport'},	
+			data: {cmd:"module_Get_One_Info",f_module_name:'HID-support'},	
 			dataType:"xml",
 			success: function(xml)
 			{	
@@ -53,8 +53,8 @@ function goto_url()
 
 	if(my_url.indexOf(":")==-1)
 	{
-	    my_url = "http://"+document.domain+"/HID-support/relayctl/";
-    	window.open(my_url,"HID");
+	    my_url = "http://"+document.domain+"/HID-support/relayctl/index.html";
+    	window.open(my_url,"HID-support");
     }
     else
     {

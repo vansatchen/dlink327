@@ -1,0 +1,114 @@
+html{
+	height: 100%;
+	font:100% Arial,Helvetica,sans-serif;
+}
+body {
+	background: #00aa77;background-image: -webkit-gradient(linear, left top, 
+		left bottom, color-stop(0.19, #81b3db), color-stop(1, #00aa77));
+	background-image: -moz-linear-gradient(top,  #81b3db 18%, #00aa77 100%);
+	background-image: -o-linear-gradient(top,  #81b3db 18%, #00aa77 100%);;
+	background-repeat: repeat-x;
+}
+
+.controls {
+	/*position:relative;*/
+	/*top:50%;*/
+	/*margin-top: -16em;
+left:10%;
+	width: 80%; */
+	/*width: inherit;*/
+}
+   .onoffswitch {
+    position: relative; width: 12em; float:right;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;   
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 0.2em solid #666666; border-radius: 0.5em;
+}
+
+.onoffswitch-inner {
+    width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner > div {
+    float: left; width: 50%; height: 3em; padding:0; line-height: 3em;
+    font-size: 1.5em;color: white; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.onoffswitch-inner .onoffswitch-active {
+    padding-left: 2em;
+    background-color: #6194FD; color: #FFFFFF;
+}
+
+.onoffswitch-inner .onoffswitch-inactive {
+    padding-right: 2em;
+    background-color: #F8F8F8; color: #666666;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    width: 5.25em; margin: 0;
+    background: #FFFFFF;
+    border: 0.3em solid #666666; border-radius: 0.75em;
+    position: absolute; top: 0; bottom: 0; right: 6.5em;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+    background-image: -moz-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+    background-image: -webkit-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+    background-image: linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0; 
+}
+
+
+.control { 
+
+    width:100%; margin:0 auto 2em; padding: 1em 1em; 
+    -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+    -webkit-border-radius:0.5em; -moz-border-radius:0.5em; border-radius:0.5em;
+    -webkit-box-align:center; -moz-box-align:center; box-align:center; 
+	background-color:rgba(255,255,255,0.4);
+	-webkit-box-shadow:0 0 0.2em rgba(0,0,0,0.3), inset 0 0 0 0.1em rgba(255,255,255,0.8);
+       -moz-box-shadow:0 0 0.2em rgba(0,0,0,0.3), inset 0 0 0 0.1em rgba(255,255,255,0.8);
+            box-shadow:0 0 0.2em rgba(0,0,0,0.3), inset 0 0 0 0.1em rgba(255,255,255,0.8);
+}
+
+.label {  font-size: 1.5em;height: 3em; padding: 0; line-height: 3em; } 
+
+
+.clear {
+   height: 0;
+   font-size: 1em;
+   margin: 0;
+   padding: 0;
+   line-height: 0;
+   clear: both;
+}
+
+.spacer{
+
+position: relative;
+margin-right: 3em;
+}
+.center {
+margin:0 auto 1em;
+width:23em;
+
+}
+

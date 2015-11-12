@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Relay control</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script type="text/javascript">
+	function command(action)
+	{
+		url="/cgi-bin/ctlrelay.cgi?command="+action;
+		url=url+"&fuie=" + Math.random(); 
+		var xmlhttp=new XMLHttpRequest(); 
+		xmlhttp.open("GET",url,false);
+		xmlhttp.send();
+	}
+	function get_status()
+	{
+		var xmlhttp=new XMLHttpRequest();
+		xmlhttp.onreadystatechange=function()
+		{
+			if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{
+				ledstate = JSON.parse(xmlhttp.responseText)
+				for (led in ledstate)
+				{
+					document.getElementById(led).checked=ledstate[led]
+				}
+			}
+		} 
+		xmlhttp.open("GET","/HID-support/ledstate?fuie="+ Math.random(),false);
+		xmlhttp.send();
+		setTimeout("get_status()",500);
+	}
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+	}
+	</script>
+</head>
+
+<body onload="get_status()">
+<!--	<div class="center">
+		<span class="control" onclick="resizeText(1)"><strong class="label">Zoom in </strong></span>
+	<span class="spacer">&nbsp;</span>
+	<span class="control" onclick="resizeText(-1)"><strong class="label">Zoom out</strong></span>
+	</div>-->
+	<div class="controls">
+		<label for="scroll">		
+			<div class="control">
+				<strong class="label">Scroll Lock</strong>
+				<div class="onoffswitch">
+					<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="scroll"  
+					onclick="if (this.checked) command ('scroll_on'); else command ('scroll_off')">
+					<label class="onoffswitch-label" for="scroll">
+						<div class="onoffswitch-inner">
+							<div class="onoffswitch-active">I</div>
+							<div class="onoffswitch-inactive">O</div>
+						</div>
+						<div class="onoffswitch-switch"></div>
+					</label>
+				</div><div class="clear"></div>
+			</div>
+		</label>
+		<label for="caps">
+			<div class="control">
+				<strong class="label">Caps Lock</strong>
+				<div class="onoffswitch">
+					<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="caps"  
+					onclick="if (this.checked) command ('caps_on'); else command ('caps_off')">
+					<label class="onoffswitch-label" for="caps">
+						<div class="onoffswitch-inner">
+							<div class="onoffswitch-active">I</div>
+							<div class="onoffswitch-inactive">O</div>
+						</div>
+						<div class="onoffswitch-switch"></div>
+					</label>
+				</div><div class="clear"></div>
+			</div>
+		</label>
+		<label for="num">
+			<div class="control">
+				<strong class="label">Num Lock</strong>
+				<div class="onoffswitch">
+					<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="num"  
+					onclick="command('num_pulse')">
+					<label class="onoffswitch-label" for="num">
+						<div class="onoffswitch-inner">
+							<div class="onoffswitch-active">I</div>
+							<div class="onoffswitch-inactive">O</div>
+						</div>
+						<div class="onoffswitch-switch"></div>
+					</label>
+				</div><div class="clear"></div>
+			</div>
+		</label>
+	</div>
+	
+
+</body>
+</html>

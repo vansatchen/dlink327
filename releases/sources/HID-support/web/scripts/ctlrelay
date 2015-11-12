@@ -1,0 +1,70 @@
+#!/bin/sh
+
+KB_LEDS=/dev/event0
+EV_LED="\0021\0000"
+LED_NUML="\0000\0000"
+LED_CAPSL="\0001\0000"
+LED_SCROLLL="\0002\0000"
+TURN_ON="\0001\0000\0000\0000"
+TURN_OFF="\0000\0000\0000\0000"
+DT_DUMMY="\0000\0000\0000\0000\0000\0000\0000\0000"
+
+NUM_ON=$DT_DUMMY$EV_LED$LED_NUML$TURN_ON
+NUM_OFF=$DT_DUMMY$EV_LED$LED_NUML$TURN_OFF
+CAPS_ON=$DT_DUMMY$EV_LED$LED_CAPSL$TURN_ON
+CAPS_OFF=$DT_DUMMY$EV_LED$LED_CAPSL$TURN_OFF
+SCROLL_ON=$DT_DUMMY$EV_LED$LED_SCROLLL$TURN_ON
+SCROLL_OFF=$DT_DUMMY$EV_LED$LED_SCROLLL$TURN_OFF
+
+#if ! ps | grep -qe "[c]at $KB_LEDS"; then  cat $KB_LEDS > /dev/null & fi
+
+if [ -z "$QUERY_STRING" ]; then COMMAND=$1;
+else
+COMMAND=`echo "$QUERY_STRING" | sed -n 's/^.*command=\([^&]*\).*$/\1/p'`
+printf "Content-type: text/plain\r\n\r\n"
+fi
+
+case $COMMAND in
+        num_on)
+                printf $NUM_ON  > $KB_LEDS;;
+        num_off)
+                printf $NUM_OFF > $KB_LEDS;;
+        caps_on)
+        	printf caps_on > /var/rrr
+                printf $CAPS_ON > $KB_LEDS;;
+                
+        caps_off)
+        	printf caps_off > /var/rrr
+                printf $CAPS_OFF > $KB_LEDS;;
+        scroll_on)
+                printf $SCROLL_ON > $KB_LEDS;;
+        scroll_off)
+                printf $SCROLL_OFF > $KB_LEDS;;
+        num_pulse)
+                printf $NUM_ON  > $KB_LEDS
+                sleep 1
+                printf $NUM_OFF > $KB_LEDS
+                ;;
+        caps_pulse)
+                printf $CAPS_ON > $KB_LEDS
+                sleep 1
+                printf $CAPS_OFF > $KB_LEDS
+                ;;
+        scroll_pulse)
+                printf $SCROLL_ON > $KB_LEDS
+                sleep 1
+                printf $SCROLL_OFF > $KB_LEDS
+                ;;
+        *)      WRONG_ARG=1;;
+esac
+
+if [ -z $WRONG_ARG ]
+then
+        STATE_FILE=/mnt/HD/HD_a2/Nas_Prog/HID-support/web/ledstate
+        DEFAULT_STATE={\"num\":false,\"caps\":false,\"scroll\":false}
+        if ! [ -e $STATE_FILE ]; then  echo $DEFAULT_STATE > $STATE_FILE; fi
+        AFFECTED_LED=`echo $COMMAND | sed -r -e 's/_[a-z]+$//'`
+        NEW_STATE=`echo $COMMAND | sed -r -e 's/^[a-z]+_//' -e 's/on/true/' -e 's/off|pulse/false/'`
+        sed -i -r 's/"'"$AFFECTED_LED"'":[a-z]+/"'"$AFFECTED_LED"'":'"$NEW_STATE"'/' $STATE_FILE
+fi
+
