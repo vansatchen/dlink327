@@ -6,21 +6,21 @@ if($_GET["func"] == "sendscrolllockname") {
    $scrolllockdata = $_POST[scrolllockdata];
    if (empty($scrolllockdata)) { exit("<b><font color='red'>Scroll Lock name MUST BE FILLED!!!</font></b><br ><i>Example: Lamp1</i>"); }
 	exec ("sed -i 's#<strong class=label id=scrolllock>.*#<strong class=label id=scrolllock>$scrolllockdata</strong>#g' $relayctlindex", $output);
-	echo "<b><font color='green'>Name for Scroll Lock saved!</font></b><br >";
+	echo "<b><font color='green'>Name '$scrolllockdata' for Scroll Lock assigned!</font></b><br >";
 }
 
 if($_GET["func"] == "sendcapslockname") {
    $capslockdata = $_POST[capslockdata];
-   if (empty($capslockdata)) { exit("<b><font color='red'>STREAMHOST CELL MUST BE FILLED!!!</font></b><br ><i>Example: 192.168.1.52</i>"); }
-	exec ("sed -i 's/VIDEOSRC=.*/VIDEOSRC=http:\/\/$capslockdata/g' $relayctlindex", $output);
-	echo "<b><font color='green'>StreamHost saved!</font></b><br >";
+   if (empty($capslockdata)) { exit("<b><font color='red'>Caps Lock name MUST BE FILLED!!!</font></b><br ><i>Example: Lamp23</i>"); }
+	exec ("sed -i 's#<strong class=label id=capslock>.*#<strong class=label id=capslock>$capslockdata</strong>#g' $relayctlindex", $output);
+	echo "<b><font color='green'>Name '$capslockdata' for Caps Lock assigned!</font></b><br >";
 }
 
 if($_GET["func"] == "sendnumlockname") {
    $numlockdata = $_POST[numlockdata];
-   if (empty($numlockdata)) { exit("<b><font color='red'>STREAMPORT CELL MUST BE DIGITS!!!</font></b><br ><i>Example: 7776</i>"); }
-	exec ("sed -i 's/SRCPORT=.*/SRCPORT=$numlockdata/g' $relayctlindex", $output);
-	echo "<b><font color='green'>StreamPort saved!</font></b><br >";
+   if (empty($numlockdata)) { exit("<b><font color='red'>Num Lock name MUST BE FILLED!!!</font></b><br ><i>Lamp5</i>"); }
+	exec ("sed -i 's#<strong class=label id=numlock>.*#<strong class=label id=numlock>$numlockdata</strong>#g' $relayctlindex", $output);
+	echo "<b><font color='green'>Name '$numlockdata' for Num Lock assigned!</font></b><br >";
 }
 
 ?>
