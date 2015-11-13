@@ -1,6 +1,9 @@
 #!/bin/sh
 
-KB_LEDS=/dev/event1
+source /mnt/HD/HD_a2/Nas_Prog/HID-support/web/scripts/keyboardevent
+
+#KB_LEDS=/dev/event1
+KB_LEDS=$KEYBOARDEVENT
 EV_LED="\0021\0000"
 LED_NUML="\0000\0000"
 LED_CAPSL="\0001\0000"
