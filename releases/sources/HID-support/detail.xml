@@ -7,12 +7,12 @@
       <category>usb</category>
       <description>Addon for usb-mouse and usb-keyboard support.</description>
       <version>Version: 1.0-0</version>
-      <update>Update: 2015/11/11</update>
+      <update>Update: 2015/11/14</update>
       <size>Size: 0.24 MB</size>
       <developer>Developer: </developer>
       <website/>
       <forum/>
-      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L HID-support Package v1.0-0_11112015</platform>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L HID-support Package v1.0-0_11142015</platform>
       <screenshot>HID-support-s.png</screenshot>
     </item>
   </apkg>
