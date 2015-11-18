@@ -1,0 +1,6 @@
+PATH=/home/ugu/toolchain/armv7-marvell-linux-gnueabi-softfp_i686/bin:$PATH
+
+make clean
+make ARCH=arm menuconfig
+
+make ARCH=arm CROSS_COMPILE=/home/ugu/toolchain/armv7-marvell-linux-gnueabi-softfp_i686/bin/arm-marvell-linux-gnueabi- modules
