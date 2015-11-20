@@ -16,5 +16,6 @@
 [ -f /bin/tmux ] && rm -f /bin/tmux
 [ -f /bin/nmon ] && rm -f /bin/nmon
 [ -f /bin/saidar ] && rm -f /bin/saidar
+[ -f /bin/ncdu ] && rm -f /bin/ncdu
 
 exit 0

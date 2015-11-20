@@ -17,5 +17,6 @@ ln -s $path/bin/mysqldump /bin/
 ln -s $path/bin/tmux /bin/
 ln -s $path/bin/nmon /bin/
 ln -s $path/bin/saidar /bin/
+ln -s $path/bin/ncdu /bin/
 
 exit 0

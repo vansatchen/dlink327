@@ -16,5 +16,6 @@ rm -f /bin/mysqldump
 rm -f /bin/tmux
 rm -f /bin/nmon
 rm -f /bin/saidar
+rm -f /bin/ncdu
 
 exit 0
