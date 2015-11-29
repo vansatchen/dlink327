@@ -20,4 +20,6 @@ insmod $path/modules/snd-usb-audio.ko
 
 [ -f /var/www/alsa-utils ] || ln -s $path/web /var/www/alsa-utils
 
+addgroup -g audio
+
 exit 0
