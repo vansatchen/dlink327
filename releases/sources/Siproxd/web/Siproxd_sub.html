@@ -64,12 +64,12 @@ $(document).ready(function(){
 			<tr id="id_Siproxd_data" class="enable">
 				<td>
 					<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="95%">
-					     <tr>
-							<td colspan="2" height="10">
-								<b>Siproxd</b> is the video recording system, that allows you to save your video-stream from ip-camera.<br >
-								<br >
-							</td>
-						</tr>	
+					    <tr>
+						<td colspan="2" height="10">
+							<b>Siproxd</b> is a proxy/masquerading daemon for the SIP protocol. It handles registrations of SIP clients on a private IP network and performs rewriting of the SIP message bodies to make SIP connections work via an masquerading firewall (NAT). It allows SIP software clients (like kphone, linphone) or SIP hardware clients (Voice over IP phones which are SIP-compatible, such as those from Cisco, Grandstream or Snom) to work behind an IP masquerading firewall or NAT router.<br >
+							<br >
+						</td>
+					    </tr>	
 					    <tr><td colspan="2" height="10">&nbsp;</td></tr>	
 					    <tr>
 					    	<td colspan="2">
@@ -86,10 +86,15 @@ $(document).ready(function(){
 									<td height="22" width="100">Installation Path</td>
 									<td height="22"><div id="my_path"></td>
 								</tr>
-								</table>
-							</td>
-						</tr>
-						<tr><td colspan="2" height="10">&nbsp;</td></tr>	
+							</table>
+						</td>
+					     </tr>
+					     <tr><td colspan="2" height="10">&nbsp;</td></tr>
+					     <tr><td colspan="2" height="10">
+						<b>Default port:</b> 5060
+						<br >
+					     </tr>
+					     <tr><td colspan="2" height="10">&nbsp;</td></tr>	
 					</table>
 				</td>	
 			</tr>
@@ -114,7 +119,7 @@ $(document).ready(function(){
                                         </table>
                                 </td>
                         </tr>
-			<tr><td><hr></td></tr>
+<!--			<tr><td><hr></td></tr>
 			<tr id="id_Siproxd_configure" class="enable">
 			   <td>
 				<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="95%">
@@ -233,10 +238,8 @@ $(document).ready(function(){
 				</table>
 				<br >
 				<div id="configresult"></div><script type="text/javascript" src="js/config.js"></script>
-<!--				<br >
-				<div id="currentconfigresult"></div><script type="text/javascript" src="js/config.js"></script>-->
 			</td>
-                        </tr>
+                        </tr>-->
 		</table>
 		
 	</div><!-- end of my_scroll -->
