@@ -1,0 +1,247 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title></title>	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+<link rel="stylesheet" type="text/css" href="/web/css/style.css">
+<link rel="stylesheet" type="text/css" href="/web/css/button_style.css">
+<link rel="stylesheet" type="text/css" href="/web/css/application.css">
+
+<!-- jQuery lib -->
+<script type="text/javascript" src="./js/jQuery/jquery.js?v=1.6.1"></script>
+
+<!-- jScrollPane 
+<link type="text/css" href="./jquery.jscrollpane.css?v=2.0.0" rel="stylesheet" media="all">
+<link type="text/css" href="./jquery.jscrollpane.custom.css?v=2.0.0" rel="stylesheet" media="all">
+<script type="text/javascript" src="./jquery.mousewheel.js?v=2.0.0"></script>
+<script type="text/javascript" src="./jquery.jscrollpane.js?v=2.0.0"></script>
+-->
+<script>
+var sys_time = (new Date()).getTime();
+document.write("<script language=\"javascript\" src=\"\/web\/function\/function.js?id="+sys_time+"\"><\/script>");    
+document.write("<script language=\"javascript\" src=\"\/web\/function\/init.js?id="+sys_time+"\"><\/script>"); 
+document.write("<script language=\"javascript\" src=\"\/web\/function\/web_security.js?id="+sys_time+"\"><\/script>");
+document.write("<script language=\"javascript\" src=\".\/js/CamRec.js?id="+sys_time+"\"><\/script>");	
+</script>
+<script type="text/javascript">
+	
+$(document).ready(function(){
+    get_CamRec_info();
+    //check_button();
+    
+//  jScrollPane_resize("#my_scroll");
+//	$('#my_scroll').jScrollPane({showArrows:true, scrollbarWidth: 15, arrowSize: 16});	
+	
+	$("#But_WEB_IF").click(function(){
+		
+		//if($("#But_WEB_IF").hasClass("button_medium"))
+			goto_url();
+	})	
+});
+</script>
+</head> 
+<body>	
+<FORM name="form1" id="form1" action="#" method=POST>
+
+<div class="osX">
+	<div id="my_scroll">  	
+		
+		<table border="0" width="100%" cellspacing="0" cellpadding="0">
+			<tr id="id_CamRec_icon">
+				<td>
+					<table border="0" width="100%" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="16"><div class="arrow_down" id="CamRec_icon"></div></td>
+							<td><div class="accordion_title">CamRec</div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr><td><hr></td></tr>
+			<tr id="id_CamRec_data" class="enable">
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="95%">
+					     <tr>
+							<td colspan="2" height="10">
+								<b>CamRec</b> is the video recording system, that allows you to save your video-stream from ip-camera.<br >
+								<br >
+							</td>
+						</tr>	
+					    <tr><td colspan="2" height="10">&nbsp;</td></tr>	
+					    <tr>
+					    	<td colspan="2">
+						    	<table cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="300"  border="0">
+								<tr>
+									<td height="22" width="100">Installation Date</td>
+									<td height="22"><div id="my_date"></td>
+								</tr>
+								<tr>
+									<td height="22" width="100">Version</td>
+									<td height="22"><div id="my_version"></td>
+								</tr>
+								<tr>
+									<td height="22" width="100">Installation Path</td>
+									<td height="22"><div id="my_path"></td>
+								</tr>
+								</table>
+							</td>
+						</tr>
+						<tr><td colspan="2" height="10">&nbsp;</td></tr>	
+					</table>
+				</td>	
+			</tr>
+		</table>
+<!-- Configure camrec -->
+		<style type="text/css">
+			th {
+			   background: #E1EFFB;
+			   width: 14.3%;
+			   height: 20px;
+			}
+		</style>
+		<table border="0" width="100%" cellspacing="0" cellpadding="0">
+			<tr><td><hr></td></tr>
+                        <tr id="id_CamRec_icon">
+                                <td>
+                                        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                        <td width="16"><div class="arrow_down" id="CamRec_icon"></div></td>
+                                                        <td><div class="accordion_title">Configure CamRec</div></td>
+                                                </tr>
+                                        </table>
+                                </td>
+                        </tr>
+			<tr><td><hr></td></tr>
+			<tr id="id_CamRec_configure" class="enable">
+			   <td>
+				<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="95%">
+					<tr><td><h1><b>Status</b></h1></td></tr>
+					<tr>
+						<td><div id="rec-status"></div>
+						   <script>
+							function show(){
+							   $.ajax({
+							      url: "scripts/status.php",
+							      cache: false,
+							      success: function(html){
+						              $("#rec-status").html(html);
+						  	      }
+					            	   });
+							}
+							$(document).ready(function(){
+							   show();
+							   setInterval('show()',2000);
+							});
+						   </script>
+						</td>
+					</tr>
+					<tr>
+						<td><div id="But_STOP" class="button_medium">Stop</div>
+					</tr>
+					<br >
+					<tr>
+						<td><div id="But_START" class="button_medium">Start</div>
+					</tr><script type="text/javascript" src="js/config.js"></script>
+				</table>
+				<br >
+				<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="95%">
+					<tr><td><h1><b>Config</b></h1></td></tr>
+				</table>
+				<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="95%">
+					<tr>
+						<th>Output directory</th>
+						<th>Host</th>
+						<th>Port</th>
+						<th>FPS</th>
+						<th>Record time</th>
+						<th>Use Yadif</th>
+						<th>Store videos</th>
+					</tr>
+					<tr id="currentconfigresult">
+					</tr>
+					<tr>
+						<th>
+						   <form action="" id="diroutform">
+							<input type="text" name="streamdirout" id="streamdirout" />
+							<input type="button" onclick="senddirout();" value="Save" />
+						  </form>
+						</th>
+						<th>
+						   <form action="" id="hostform">
+							<input type="text" name="streamhost" id="streamhost" />
+							<input type="button" onclick="sendhost();" value="Save" />
+						   </form>
+						</th>
+						<th>
+						   <form action="" id="portform">
+							<input type="number" name="streamport" id="streamport" />
+							<input type="button" onclick="sendport();" value="Save" />
+						   </form>
+						</th>
+						<th>
+						   <form action="" id="fpsform">
+							<select size="1" name="streamfps" id="streamfps" onchange="sendfps();" />
+								<option selected value="">Change me</option>
+								<option value="1">1</option>
+								<option value="5">5</option>
+								<option value="10">10</option>
+								<option value="15">15</option>
+								<option value="20">20</option>
+								<option value="25">25</option>
+								<option value="30">30</option>
+							</select>
+						   </form>
+						</th>
+						<th>
+						   <form action="" id="timeform">
+							<select size="1" name="streamtime" id="streamtime" onchange="sendtime();" />
+								<option selected value="">Change me</option>
+								<option value="15">15</option>
+								<option value="30">30</option>
+								<option value="45">45</option>
+								<option value="60">60</option>
+							</select>
+						   </form>
+						</th>
+						<th>
+						   <form action="" id="filterform">
+							<select size="1" name="streamfilter" id="streamfilter" onchange="sendfilter();" />
+								<option selected value="">Change me</option>
+								<option value="false">false</option>
+								<option value="true">true</option>
+							</select>
+						  </form>
+						</th>
+						<th>
+						   <form action="" id="storeform">
+							<select size="1" name="streamstore" id="streamstore" onchange="sendstore();" />
+								<option selected value="">Change me</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+							</select>
+						   </form>
+						</th>
+					</tr>
+				</table>
+				<br >
+				<div id="configresult"></div><script type="text/javascript" src="js/config.js"></script>
+<!--				<br >
+				<div id="currentconfigresult"></div><script type="text/javascript" src="js/config.js"></script>-->
+			</td>
+                        </tr>
+		</table>
+		
+	</div><!-- end of my_scroll -->
+</div><!-- end of osX -->
+
+</form>	
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <apkg>
+    <item>
+      <procudt_id>0</procudt_id>
+      <custom_id>8</custom_id>
+      <model_id>13</model_id>
+      <user_control>0</user_control>
+      <center_type>0</center_type>
+      <name>Siproxd</name>
+      <show>Siproxd</show>
+      <enable>0</enable>
+      <version>0.8.1-0</version>
+      <date>20151130</date>
+      <inst_date/>
+      <path/>
+      <ps_name/>
+      <url>index.html</url>
+      <url_port>80</url_port>
+      <apkg_version>2</apkg_version>
+      <packager>rusatch</packager>
+      <email>rusatch@mail.ru</email>
+      <homepage/>
+      <inst_depend/>
+      <inst_conflict/>
+      <start_depend/>
+      <start_conflict/>
+      <description>Siproxd is a proxy/masquerading daemon for the SIP protocol.</description>
+      <icon/>
+    </item>
+  </apkg>
+</config>
