@@ -1,8 +1,8 @@
 <?php 
 
-$camrecconf = '/mnt/HD/HD_a2/Nas_Prog/CamRec/etc/camrec.conf';
+$siproxdconf = '/mnt/HD/HD_a2/Nas_Prog/Siproxd/etc/siproxd.conf';
 
-exec("grep 'DIROUT\|VIDEOSRC\|SRCPORT\|VIDEOFPS\|RCRDTIME\|RCRDFILTER\|SAVEDATE' $camrecconf | sed -e 's/.*=//g' | sed -e 's#http://##g'", $output);
+exec("grep 'DIROUT\|VIDEOSRC\|SRCPORT\|VIDEOFPS\|RCRDTIME\|RCRDFILTER\|SAVEDATE' $siproxdconf | sed -e 's/.*=//g' | sed -e 's#http://##g'", $output);
 $outputs = implode(" ", $output);
 $status_array=explode(" ", $outputs);
 

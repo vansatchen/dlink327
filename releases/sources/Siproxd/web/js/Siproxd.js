@@ -1,11 +1,11 @@
-function get_CamRec_info()
+function get_Siproxd_info()
 {
 	$.ajax({
 			url: "/cgi-bin/apkg_mgr.cgi",
 			type: "POST",
 			async: false,
 			cache: false,		
-			data: {cmd:"module_Get_One_Info",f_module_name:'CamRec'},	
+			data: {cmd:"module_Get_One_Info",f_module_name:'Siproxd'},	
 			dataType:"xml",
 			success: function(xml)
 			{	
@@ -54,7 +54,7 @@ function goto_url()
 	if(my_url.indexOf(":")==-1)
 	{
 	    my_url = "http://"+document.domain+"/loganalyzer/";
-    	window.open(my_url,"CamRec");
+    	window.open(my_url,"Siproxd");
     }
     else
     {
