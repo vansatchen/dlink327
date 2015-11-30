@@ -1,31 +1,5 @@
-function senddirout(){
-	var diroutdata = $('#streamdirout').val()
-		$.ajax({
-			type: "POST",
-			url: "scripts/senddata.php?func=senddirout",
-			data: "diroutdata="+diroutdata,
-			success: function(html) {
-				$("#configresult").empty();
-				$("#configresult").append(html);
-			}
-		});
-}
-
-function sendhost(){
-	var hostdata = $('#streamhost').val()
-		$.ajax({
-			type: "POST",
-			url: "scripts/senddata.php?func=sendhost",
-			data: "hostdata="+hostdata,
-			success: function(html) {
-				$("#configresult").empty();
-				$("#configresult").append(html);
-			}
-		});
-}
-
 function sendport(){
-	var portdata = $('#streamport').val()
+	var portdata = $('#siproxdport').val()
 		$.ajax({
 			type: "POST",
 			url: "scripts/senddata.php?func=sendport",
@@ -37,12 +11,12 @@ function sendport(){
 		});
 }
 
-function sendfps(){
-	var fpsdata = $('#streamfps').val()
+function sendlog(){
+	var logdata = $('#siproxdlog').val()
 		$.ajax({
 			type: "POST",
-			url: "scripts/senddata.php?func=sendfps",
-			data: "fpsdata="+fpsdata,
+			url: "scripts/senddata.php?func=sendlog",
+			data: "logdata="+logdata,
 			success: function(html) {
 				$("#configresult").empty();
 				$("#configresult").append(html);
@@ -50,12 +24,12 @@ function sendfps(){
 		});
 }
 
-function sendtime(){
-	var timedata = $('#streamtime').val()
+function sendrtp(){
+	var rtpdata = $('#siproxdrtp').val()
 		$.ajax({
 			type: "POST",
-			url: "scripts/senddata.php?func=sendtime",
-			data: "timedata="+timedata,
+			url: "scripts/senddata.php?func=sendrtp",
+			data: "rtpdata="+rtpdata,
 			success: function(html) {
 				$("#configresult").empty();
 				$("#configresult").append(html);
@@ -63,12 +37,12 @@ function sendtime(){
 		});
 }
 
-function sendfilter(){
-	var filterdata = $('#streamfilter').val()
+function sendportlow(){
+	var portlowdata = $('#siproxdportlow').val()
 		$.ajax({
 			type: "POST",
-			url: "scripts/senddata.php?func=sendfilter",
-			data: "filterdata="+filterdata,
+			url: "scripts/senddata.php?func=sendportlow",
+			data: "portlowdata="+portlowdata,
 			success: function(html) {
 				$("#configresult").empty();
 				$("#configresult").append(html);
@@ -76,12 +50,38 @@ function sendfilter(){
 		});
 }
 
-function sendstore(){
-	var storedata = $('#streamstore').val()
+function sendporthigh(){
+	var porthighdata = $('#siproxdporthigh').val()
 		$.ajax({
 			type: "POST",
-			url: "scripts/senddata.php?func=sendstore",
-			data: "storedata="+storedata,
+			url: "scripts/senddata.php?func=sendporthigh",
+			data: "porthighdata="+porthighdata,
+			success: function(html) {
+				$("#configresult").empty();
+				$("#configresult").append(html);
+			}
+		});
+}
+
+function sendrtpto(){
+	var rtptodata = $('#siproxdrtpto').val()
+		$.ajax({
+			type: "POST",
+			url: "scripts/senddata.php?func=sendrtpto",
+			data: "rtptodata="+rtptodata,
+			success: function(html) {
+				$("#configresult").empty();
+				$("#configresult").append(html);
+			}
+		});
+}
+
+function sendexpires(){
+	var expiresdata = $('#siproxdexpires').val()
+		$.ajax({
+			type: "POST",
+			url: "scripts/senddata.php?func=sendexpires",
+			data: "expiresdata="+expiresdata,
 			success: function(html) {
 				$("#configresult").empty();
 				$("#configresult").append(html);
