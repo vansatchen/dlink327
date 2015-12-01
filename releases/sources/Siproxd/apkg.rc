@@ -1,6 +1,6 @@
 Package:          Siproxd
 Section:          network
-Version:          0.8.1-0
+Version:          0.8.1-1
 Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         
