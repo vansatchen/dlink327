@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <apkg>
+    <item>
+      <show>MPD-alsa</show>
+      <name>MPD-alsa</name>
+      <category>sound</category>
+      <description>Music Player Daemon (MPD) is a flexible, powerful, server-side application for playing music. Through plugins and libraries it can play a variety of sound files while being controlled by its network protocol.</description>
+      <version>Version: 0.19.11-0</version>
+      <update>Update: 2015/12/04</update>
+      <size>Size: 5.51 MB</size>
+      <developer>Developer: </developer>
+      <website>http://www.musicpd.org</website>
+      <forum/>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L MPD-alsa Package v0.19.11-0_12042015</platform>
+      <screenshot>MPD-s.png</screenshot>
+    </item>
+  </apkg>
+</config>

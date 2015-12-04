@@ -1,0 +1,19 @@
+Package:          MPD-alsa
+Version:          0.19.11-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    MPD-alsa
+AddonIndexPage:   index.html
+AddonUsedPort:    80
+InstDepend:       alsa-utils
+InstConflict:             
+StartDepend:      alsa-utils
+StartConflict:
+Description:      Server-side application for playing music.
+Category:         sound
+Screenshot:       MPD-s.png
+Website:          http://www.musicpd.org
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: Music Player Daemon (MPD) is a flexible, powerful, server-side application for playing music. Through plugins and libraries it can play a variety of sound files while being controlled by its network protocol.
+
