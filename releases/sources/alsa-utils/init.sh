@@ -19,6 +19,7 @@ insmod $path/modules/snd-usb-audio.ko
 [ -f /lib/libtinfo.so.5 ] || ln -s $path/lib/libtinfo.so.5 /lib/
 
 [ -f /var/www/alsa-utils ] || ln -s $path/web /var/www/alsa-utils
+[ -f /etc/asound.conf ] || cp $path/etc/asound.conf /etc/
 
 addgroup -g audio
 

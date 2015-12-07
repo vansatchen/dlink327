@@ -15,6 +15,8 @@ done
 [ -f /bin/iperf3 ] && rm -f /bin/iperf3
 [ -f /bin/nethogs ] && rm -f /bin/nethogs
 [ -f /bin/ngrep ] && rm -f /bin/ngrep
+[ -f /bin/netcat ] && rm -f /bin/netcat
+[ -f /bin/nc ] && rm -f /bin/nc
 
 ln -s $path/web /var/www/net-utils
 

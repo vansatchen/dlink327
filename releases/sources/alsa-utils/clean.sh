@@ -27,5 +27,7 @@ rm -f /lib/libasound.so.2.0.0
 rm -f /lib/libform.so.5
 rm -f /lib/libmenu.so.5
 rm -f /lib/libtinfo.so.5
+rm -f /etc/asound.conf
+rm -f /var/www/alsa-utils
 
 exit 0

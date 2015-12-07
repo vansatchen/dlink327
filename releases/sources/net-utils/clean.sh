@@ -9,5 +9,7 @@ rm -f /bin/iperf
 rm -f /bin/iperf3
 rm -f /bin/nethogs
 rm -f /bin/ngrep
+rm -f /bin/netcat
+rm -f /bin/nc
 
 exit 0
