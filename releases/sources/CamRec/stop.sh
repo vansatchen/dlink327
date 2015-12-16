@@ -6,6 +6,6 @@
 
 # Stop ffmpeg
 killall -9 ffmpeg
-kill `ps -e | grep crond | grep CamRec | awk '{print $1}'`
+kill `ps -e | grep cronc | grep CamRec | awk '{print $1}'`
 
 exit 0
