@@ -11,5 +11,6 @@ rm -f /bin/nethogs
 rm -f /bin/ngrep
 rm -f /bin/netcat
 rm -f /bin/nc
+rm -f /bin/fping
 
 exit 0

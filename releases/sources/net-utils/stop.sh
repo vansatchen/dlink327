@@ -10,5 +10,6 @@
 [ -f /bin/ngrep ] && rm -f /bin/ngrep
 [ -f /bin/netcat ] && rm -f /bin/netcat
 [ -f /bin/nc ] && rm -f /bin/nc
+[ -f /bin/fping ] && rm -f /bin/fping
 
 exit 0

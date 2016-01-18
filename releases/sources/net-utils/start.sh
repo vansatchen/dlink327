@@ -12,6 +12,7 @@ ln -s $path/bin/nethogs /bin/
 ln -s $path/bin/ngrep /bin/
 ln -s $path/bin/netcat /bin/
 ln -s $path/bin/netcat /bin/nc
+ln -s $path/bin/fping /bin/
 
 exit 0
 
