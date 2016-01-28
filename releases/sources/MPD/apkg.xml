@@ -10,8 +10,8 @@
       <name>MPD</name>
       <show>MPD</show>
       <enable>0</enable>
-      <version>0.19.8-4</version>
-      <date>20150629</date>
+      <version>0.19.12-0</version>
+      <date>20160128</date>
       <inst_date/>
       <path/>
       <ps_name/>
@@ -21,9 +21,9 @@
       <packager>rusatch</packager>
       <email>rusatch@mail.ru</email>
       <homepage/>
-      <inst_depend/>
+      <inst_depend>alsa-utils</inst_depend>
       <inst_conflict/>
-      <start_depend>PulseAudio</start_depend>
+      <start_depend>alsa-utils</start_depend>
       <start_conflict/>
       <description>Server-side application for playing music.</description>
       <icon/>

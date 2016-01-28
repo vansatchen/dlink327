@@ -1,14 +1,14 @@
 Package:          MPD
-Version:          0.19.8-4
+Version:          0.19.12-0
 Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         
 AddonShowName:    MPD
 AddonIndexPage:   index.html
 AddonUsedPort:    80
-InstDepend:
+InstDepend: 	  alsa-utils
 InstConflict:             
-StartDepend:      PulseAudio
+StartDepend:      alsa-utils
 StartConflict:
 Description:      Server-side application for playing music.
 Category:         sound
