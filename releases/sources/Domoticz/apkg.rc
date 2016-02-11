@@ -1,0 +1,19 @@
+Package:          Domoticz
+Version:          2.4522-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    Domoticz
+AddonIndexPage:   index.html
+AddonUsedPort:    80
+InstDepend: 	  
+InstConflict:             
+StartDepend:      
+StartConflict:
+Description:      Home automation system.
+Category:         IoT
+Screenshot:       Domoticz-s.png
+Website:          https://domoticz.com
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: Domoticz is a very light weight home automation system that lets you monitor and configure various devices like: lights, switches, various sensors/meters like temperature, rainfall, wind, Ultraviolet (UV) radiation, electricity usage/production, gas consumption, water consumption and many more. Notifications/alerts can be sent to any mobile device.
+
