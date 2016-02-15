@@ -1,0 +1,19 @@
+Package:          Domoticz-backup
+Version:          1.0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    Domoticz-backup
+AddonIndexPage:   index.html
+AddonUsedPort:    80
+InstDepend: 	  
+InstConflict:             
+StartDepend:      
+StartConflict:
+Description:      Home automation system.
+Category:         IoT
+Screenshot:       Domoticz-s.png
+Website:          https://domoticz.com
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: Please, remove me!
+

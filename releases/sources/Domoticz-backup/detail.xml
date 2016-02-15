@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <apkg>
+    <item>
+      <show>Domoticz-backup</show>
+      <name>Domoticz-backup</name>
+      <category>IoT</category>
+      <description>Please, remove me!</description>
+      <version>Version: 1.0</version>
+      <update>Update: 2016/02/15</update>
+      <size>Size: 0.00 MB</size>
+      <developer>Developer: </developer>
+      <website>https://domoticz.com</website>
+      <forum/>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L Domoticz-backup Package v1.0_02152016</platform>
+      <screenshot>Domoticz-s.png</screenshot>
+    </item>
+  </apkg>
+</config>
