@@ -1,0 +1,19 @@
+Package:          CMus
+Version:          2.7.1-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    CMus
+AddonIndexPage:   NULL
+AddonUsedPort:    
+InstDepend: 	  alsa-utils
+InstConflict:             
+StartDepend:      alsa-utils
+StartConflict:
+Description:      Server-side application for playing music.
+Category:         sound
+Screenshot:       CMus-s.png
+Website:          https://cmus.github.io
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: cmus (C* Music Player) is a small and fast console audio player for Unix-like operating systems.
+

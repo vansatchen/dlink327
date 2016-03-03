@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <apkg>
+    <item>
+      <show>CMus</show>
+      <name>CMus</name>
+      <category>sound</category>
+      <description>cmus (C* Music Player) is a small and fast console audio player for Unix-like operating systems.</description>
+      <version>Version: 2.7.1-0</version>
+      <update>Update: 2016/03/03</update>
+      <size>Size: 0.70 MB</size>
+      <developer>Developer: </developer>
+      <website>https://cmus.github.io</website>
+      <forum/>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L CMus Package v2.7.1-0_03032016</platform>
+      <screenshot>CMus-s.png</screenshot>
+    </item>
+  </apkg>
+</config>
