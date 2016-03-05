@@ -1,12 +1,12 @@
 Package:          MPD
-Version:          0.19.13-0
+Version:          0.19.13-1
 Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         
 AddonShowName:    MPD
 AddonIndexPage:   index.html
 AddonUsedPort:    80
-InstDepend: 	  alsa-utils
+InstDepend:       alsa-utils
 InstConflict:             
 StartDepend:      alsa-utils
 StartConflict:

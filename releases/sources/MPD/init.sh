@@ -5,7 +5,11 @@ path=$1
 LIBCONS=`ls $path/lib/`
 
 for LIBA in $LIBCONS; do
-        [ ! -f /lib/$LIBA ] && ln -s $path/lib/$LIBA /lib/
+	if [ ! -f /lib/$LIBA ]; then
+		rm -f /lib/$LIBA
+		ln -s $path/lib/$LIBA /lib/
+	fi
+#        [ ! -f /lib/$LIBA ] && ln -s $path/lib/$LIBA /lib/
 done
 
 [ -f /bin/mpd ] && rm -f /bin/mpd || ln -s $path/bin/mpd /bin/
