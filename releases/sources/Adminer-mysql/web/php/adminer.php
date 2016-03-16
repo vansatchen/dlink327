@@ -12,4 +12,4 @@ function adminer_object() {
   return new AdminerSoftware;
 }
 
-include "./php/adminer-4.2.2-mysql.php";
+include "./php/adminer-4.2.4-mysql.php";

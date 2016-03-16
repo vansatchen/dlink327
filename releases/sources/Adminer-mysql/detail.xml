@@ -6,13 +6,13 @@
       <name>Adminer-mysql</name>
       <category>Databases</category>
       <description>Adminer (formerly phpMinAdmin) is a full-featured database management tool written in PHP.</description>
-      <version>Version: 4.2.2-0</version>
-      <update>Update: 2015/10/27</update>
-      <size>Size: 0.40 MB</size>
+      <version>Version: 4.2.4-0</version>
+      <update>Update: 2016/03/16</update>
+      <size>Size: 0.41 MB</size>
       <developer>Developer: </developer>
       <website>https://www.adminer.org</website>
       <forum/>
-      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L Adminer-mysql Package v4.2.2-0_10272015</platform>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L Adminer-mysql Package v4.2.4-0_03162016</platform>
       <screenshot>Adminer-mysql-s.png</screenshot>
     </item>
   </apkg>
