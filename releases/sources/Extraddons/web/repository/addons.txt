@@ -1,0 +1,55 @@
+PACKAGE=Adminer-mysql
+PACKAGEVERSION_Adminer-mysql=v4.2.4-0
+PACKAGENAME_Adminer-mysql=DNS-327L%20Adminer-mysql%20Package%20v4.2.4-0_03162016
+PACKAGEDESCRIPTION_Adminer-mysql="Adminer (formerly phpMinAdmin) is a full-featured database management tool written in PHP."
+
+
+PACKAGE=alsa-utils
+PACKAGEVERSION_alsa-utils=v1.1.0-0
+PACKAGENAME_alsa-utils=DNS-327L%20alsa-utils%20Package%20v1.1.0-0_01282016
+PACKAGEDESCRIPTION_alsa-utils="Sound server."
+
+PACKAGE=CamRec
+PACKAGEVERSION_CamRec=v2.3-2
+PACKAGENAME_CamRec=DNS-327L%20CamRec%20Package%20v2.3-2_06292015
+PACKAGEDESCRIPTION_CamRec="Record stream from mjpg-camera."
+
+PACKAGE=Domoticz
+PACKAGEVERSION_Domoticz=v3.4925-0
+PACKAGENAME_Domoticz=DNS-327L%20Domoticz%20Package%20v3.4925-0_03102016
+PACKAGEDESCRIPTION_Domoticz="Home automation system."
+
+PACKAGE=HID-support
+PACKAGEVERSION_HID-support=v1.0-2
+PACKAGENAME_HID-support=DNS-327L%20HID-support%20Package%20v1.0-2_11192015
+PACKAGEDESCRIPTION_HID-support="Addon for usb-mouse and usb-keyboard support."
+
+PACKAGE=MPD
+PACKAGEVERSION_MPD=v0.19.13-1
+PACKAGENAME_MPD=DNS-327L%20MPD%20Package%20v0.19.13-1_03052016
+PACKAGEDESCRIPTION_MPD="Server-side application for playing music."
+
+PACKAGE=net-snmp
+PACKAGEVERSION_net-snmp=v5.7.3-2
+PACKAGENAME_net-snmp=DNS-327L%20net-snmp%20Package%20v5.7.3-2_06292015
+PACKAGEDESCRIPTION_net-snmp="Simple Network Management Protocol."
+
+PACKAGE=net-utils
+PACKAGEVERSION_net-utils=v1.4-0
+PACKAGENAME_net-utils=DNS-327L%20net-utils%20Package%20v1.4-0_01182016
+PACKAGEDESCRIPTION_net-utils="Some cool utils for net."
+
+PACKAGE=Siproxd
+PACKAGEVERSION_Siproxd=v0.8.1-1
+PACKAGENAME_Siproxd=DNS-327L%20Siproxd%20Package%20v0.8.1-1_12012015
+PACKAGEDESCRIPTION_Siproxd="Siproxd is a proxy/masquerading daemon for the SIP protocol."
+
+PACKAGE=term-utils
+PACKAGEVERSION_term-utils=v1.4-0
+PACKAGENAME_term-utils=DNS-327L%20term-utils%20Package%20v1.4-0_02122016
+PACKAGEDESCRIPTION_term-utils="Some cool utils for OS."
+
+PACKAGE=usbserial-support
+PACKAGEVERSION_usbserial-support=v1.1-1
+PACKAGENAME_usbserial-support=DNS-327L%20usbserial-support%20Package%20v1.1-1_10072015
+PACKAGEDESCRIPTION_usbserial-support="Support for usbserial converters."

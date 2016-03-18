@@ -1,0 +1,19 @@
+Package:          Extraddons
+Version:          0.1-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    Extraddons
+AddonIndexPage:   index.html
+AddonUsedPort:    80
+InstDepend:       
+InstConflict:             
+StartDepend:      
+StartConflict:
+Description:      Addons with the additional functionality.
+Category:         Extra
+Screenshot:       Extraddons-s.png
+Website:          
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: Addons with the additional functionality.
+
