@@ -1,0 +1,19 @@
+Package:          MEGAsync
+Section:          Backup
+Version:          1.9.97-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    MEGAsync
+AddonIndexPage:   index.html
+AddonUsedPort:    80
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      Download/upload your files from/to mega.nz.
+Category:         Backup
+Screenshot:       MEGAsync-s.png
+Website:          
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: Download/upload your files from/to mega.nz.

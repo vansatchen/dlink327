@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+<link rel="stylesheet" type="text/css" href="/web/css/style.css">
+<link rel="stylesheet" type="text/css" href="/web/css/help_style.css">
+
+<!-- jQuery lib -->
+<script type="text/javascript" src="./js/jQuery/jquery.js?v=1.6.1"></script>
+
+<!-- jScrollPane -->
+<link type="text/css" href="./js/jScrollPane/styles/jquery.jscrollpane.css?v=2.0.0" rel="stylesheet" media="all">
+<link type="text/css" href="./js/jScrollPane/styles/jquery.jscrollpane.custom.css?v=2.0.0" rel="stylesheet" media="all">
+<script type="text/javascript" src="./js/jScrollPane/scripts/jquery.mousewheel.js?v=2.0.0"></script>
+<script type="text/javascript" src="./js/jScrollPane/scripts/jquery.jscrollpane.js?v=2.0.0"></script>
+
+<!-- generic -->
+<script language="javascript" src="/web/function/help.js"></script>
+</head>
+<body>
+<div class="osX">
+<div id="my_scroll"  class="scroll-pane-arrows">
+<span class="point_icon">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="_text hints" lang="_common" datafld="help">Helpful...</span><br>			
+
+<span>
+This section allows you to configure the MEGAsync function.<br><br>
+<b><i>Configure MEGAsync</i></b><br>
+<br >
+<b>"Status"</b> section show current state of ffmpeg-daemon.
+<p>Use button <b>Stop</b> for kill ffmpeg-daemon and stop recording.
+<p>Use button <b>Start</b> to start recording.
+<br ><br >
+<b>"Config"</b> section allows you to configure ffmpeg-daemon.
+<p>Fill <b>"Output directory"</b> cell to set or change directory where videos will be saved <i>(for example: /mnt/HD/HD_a2)</i>, and press <b>"Save"</b> button to save changes.
+<p>Fill <b>"Host"</b> cell to set or change the host from wich streaming <i>(for example: 192.168.1.52)</i>, and press <b>"Save"</b> button to save changes.
+<p>Fill <b>"Port"</b> cell to set or change the port of host from wich streaming <i>(for example: 7776)</i>, and press <b>"Save"</b> button to save changes.
+<p>Change <b>"FPS"</b> cell to set or change the Frames per Second of video-stream <i>(for example: 10)</i>, and press <b>"Save"</b> button to save changes.
+<p>Change <b>"Record time"</b> cell to set or change the time(in minutes) of video-recording <i>(for example: 30)</i>, and press <b>"Save"</b> button to save changes.
+<p>Change <b>"Use Yadif"</b> cell to set or change using deinterlace filter with video-recording <i>(for example: true)</i>, and press <b>"Save"</b> button to save changes.
+<p>Change <b>"Store videos"</b> cell to set or change the time(in days) for save videos <i>(for example: 3)</i>, and press <b>"Save"</b> button to save changes.
+<br ><br >
+</span>
+
+</div><!--end of my_scroll-->
+</div><!--end of osX-->
+</body>
+</html>
+
+<script>
+var sys_time = (new Date()).getTime();	
+document.write("<script language=\"javascript\" src=\"/web/function/language.js?id="+sys_time+"\"><\/script>");
+</script>
+
