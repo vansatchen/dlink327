@@ -81,6 +81,12 @@ feature_list_test () {
 	latestfile=`ls -t1 /tmp/bat.wav.* | head -n 1`
 	feature_test "--local -F $maxfreq --file $latestfile" \
 			"local mode: analyze local file"
+	feature_test "--roundtriplatency" \
+			"round trip latency test"
+	feature_test "--snr-db 26" \
+			"noise detect threshold in SNR(dB)"
+	feature_test "--snr-pc 5" \
+			"noise detect threshold in noise percentage(%)"
 
 	print_result
 }

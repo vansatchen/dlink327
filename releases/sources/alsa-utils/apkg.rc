@@ -1,6 +1,6 @@
 Package:          alsa-utils
 Section:          sound
-Version:          1.1.1-0
+Version:          1.1.2-0
 Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         
