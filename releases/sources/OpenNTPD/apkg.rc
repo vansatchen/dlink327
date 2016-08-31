@@ -1,0 +1,13 @@
+Package:          OpenNTPD
+Version:          6.0p1-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    OpenNTPD
+AddonIndexPage:   index.html
+AddonUsedPort:    80
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      OpenNTPD is a Unix system daemon implementing the Network Time Protocol to synchronize the local clock of a computer system with remote NTP servers. It is also able to act as an NTP server to NTP-compatible clients.
