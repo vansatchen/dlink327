@@ -1,0 +1,19 @@
+Package:          Bluez
+Section:          Communications
+Version:          4.101-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         http://www.bluez.org
+AddonShowName:    Bluez
+AddonIndexPage:   index.html
+AddonUsedPort:    80
+InstDepend:	  
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      An implementation of the Bluetooth protocol stack.
+Category:         Communications
+Screenshot:       Bluez-s.png
+Website:          
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: An implementation of the Bluetooth protocol stack.

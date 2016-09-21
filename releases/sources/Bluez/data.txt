@@ -1,0 +1,4 @@
+[ -a /var/run/dbus/bt-pid ] && rm /var/run/dbus/bt-pid && dbus-daemon --config-file=Nas_Prog/Bluez/etc/dbus-1/system.d/bt-session.conf
+
+
+DBUS_SYSTEM_BUS_ADDRESS="unix:path=/var/run/dbus/bt_bus_socket" Nas_Prog/Bluez/sbin/bluetoothd

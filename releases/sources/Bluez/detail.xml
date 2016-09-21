@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <apkg>
+    <item>
+      <show>Bluez</show>
+      <name>Bluez</name>
+      <category>Communications</category>
+      <description>An implementation of the Bluetooth protocol stack.</description>
+      <version>Version: 4.101-0</version>
+      <update>Update: 2016/09/21</update>
+      <size>Size: 3.12 MB</size>
+      <developer>Developer: </developer>
+      <website/>
+      <forum/>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L Bluez Package v4.101-0_09212016</platform>
+      <screenshot>Bluez-s.png</screenshot>
+    </item>
+  </apkg>
+</config>
