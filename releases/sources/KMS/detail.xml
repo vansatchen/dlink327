@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <apkg>
+    <item>
+      <show>KMS</show>
+      <name>KMS</name>
+      <category/>
+      <description/>
+      <version>Version: svn1099-1</version>
+      <update>Update: 2016/11/05</update>
+      <size>Size: 0.24 MB</size>
+      <developer>Developer: </developer>
+      <website/>
+      <forum/>
+      <platform>327L/DNS-327L KMS Package vsvn1099-1_11052016</platform>
+      <screenshot/>
+    </item>
+  </apkg>
+</config>

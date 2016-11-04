@@ -1,0 +1,13 @@
+Package:          KMS
+Version:          svn1099-1
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    KMS
+AddonIndexPage:   index.html
+AddonUsedPort:    80
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      Key Management Service.
