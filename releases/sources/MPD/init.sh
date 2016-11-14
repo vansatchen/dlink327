@@ -5,6 +5,9 @@ path=$1
 LIBCONS=`ls $path/lib/`
 
 for LIBA in $LIBCONS; do
+	if [ ! -e /lib/$LIBA ]; then
+		rm -f /lib/$LIBA
+	fi
 	if [ ! -f /lib/$LIBA ]; then
 		rm -f /lib/$LIBA
 		ln -s $path/lib/$LIBA /lib/
