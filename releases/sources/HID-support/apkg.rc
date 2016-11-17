@@ -1,6 +1,6 @@
 Package:          HID-support
 Section:          usb
-Version:          1.0-2
+Version:          1.0-4
 Packager:         rusatch
 Email:            rusatch@mail.ru
 Homepage:         

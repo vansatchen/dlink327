@@ -6,6 +6,7 @@ insmod $path/modules/input-core.ko
 insmod $path/modules/evdev.ko
 insmod $path/modules/hid.ko
 insmod $path/modules/usbhid.ko
+insmod $path/modules/hid-samsung.ko
 
 sleep 3
 sh $path/web/scripts/findevent.sh
