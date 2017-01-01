@@ -6,13 +6,13 @@
       <name>Siproxd</name>
       <category>network</category>
       <description>Siproxd is a proxy/masquerading daemon for the SIP protocol. It handles registrations of SIP clients on a private IP network and performs rewriting of the SIP message bodies to make SIP connections work via an masquerading firewall (NAT). It allows SIP software clients (like kphone, linphone) or SIP hardware clients (Voice over IP phones which are SIP-compatible, such as those from Cisco, Grandstream or Snom) to work behind an IP masquerading firewall or NAT router.</description>
-      <version>Version: 0.8.1-1</version>
-      <update>Update: 2015/12/01</update>
-      <size>Size: 0.33 MB</size>
+      <version>Version: 0.8.2-0</version>
+      <update>Update: 2017/01/01</update>
+      <size>Size: 0.50 MB</size>
       <developer>Developer: </developer>
       <website/>
       <forum/>
-      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L Siproxd Package v0.8.1-1_12012015</platform>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L Siproxd Package v0.8.2-0_01012017</platform>
       <screenshot>Siproxd-s.png</screenshot>
     </item>
   </apkg>

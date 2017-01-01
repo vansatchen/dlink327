@@ -2,12 +2,13 @@
 
 path=$1
 
-LIBCONS=`ls $path/lib/`
+#LIBCONS=`ls $path/lib/`
 
-for LIBA in $LIBCONS; do
-        [ ! -f /lib/$LIBA ] && ln -s $path/lib/$LIBA /lib/
-done
+#for LIBA in $LIBCONS; do
+#        [ ! -f /lib/$LIBA ] && ln -s $path/lib/$LIBA /lib/
+#done
 
+ln -s $path/lib/libltdl.so.7 /lib/
 [ -f /bin/siproxd ] && rm -f /bin/siproxd
 ln -s $path/bin/siproxd /bin/
 ln -s $path/web /var/www/Siproxd

@@ -52,4 +52,11 @@ if($_GET["func"] == "sendexpires") {
 	echo "<b><font color='green'>Default expires saved!</font></b><br >";
 }
 
+if($_GET["func"] == "sendoutbound") {
+   $outbounddata = $_POST[outbounddata];
+   if (empty($outbounddata)) { exit("<b><font color='red'>Outbound host CELL MUST BE FILLED!!!</font></b><br ><i>192.168.1.23</i>"); }
+	exec ("sed -i 's/outbound_proxy_host.*/outbound_proxy_host = $outbounddata/g' $siproxdconf && kill `cat /var/run/siproxd/siproxd.pid` && /bin/siproxd", $output);
+	echo "<b><font color='green'>Outbound host saved!</font></b><br >";
+}
+
 ?>

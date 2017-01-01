@@ -89,6 +89,19 @@ function sendexpires(){
 		});
 }
 
+function sendoutbound(){
+	var outbounddata = $('#siproxdoutbound').val()
+		$.ajax({
+			type: "POST",
+			url: "scripts/senddata.php?func=sendoutbound",
+			data: "outbounddata="+outbounddata,
+			success: function(html) {
+				$("#configresult").empty();
+				$("#configresult").append(html);
+			}
+		});
+}
+
 $(document).ready(function(){
 	$('#But_STOP').click(function() {
 		$.ajax({
