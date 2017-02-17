@@ -1,0 +1,19 @@
+Package:          NTP
+Section:          network
+Version:          4.2.8p9-0
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    NTP
+AddonIndexPage:   index.html
+AddonUsedPort:    80
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      The ntpd program is an operating-system daemon that sets and maintains a computer system's system time in synchronization with Internet-standard time servers.
+Category:         network
+Screenshot:       
+Website:          
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: Network Time Protocol (NTP) is a networking protocol for clock synchronization between computer systems over packet-switched, variable-latency data networks.

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <apkg>
+    <item>
+      <show>NTP</show>
+      <name>NTP</name>
+      <category>network</category>
+      <description>Network Time Protocol (NTP) is a networking protocol for clock synchronization between computer systems over packet-switched, variable-latency data networks.</description>
+      <version>Version: 4.2.8p9-0</version>
+      <update>Update: 2017/02/17</update>
+      <size>Size: 2.26 MB</size>
+      <developer>Developer: </developer>
+      <website/>
+      <forum/>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L NTP Package v4.2.8p9-0_02172017</platform>
+      <screenshot/>
+    </item>
+  </apkg>
+</config>

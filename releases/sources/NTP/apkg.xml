@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <apkg>
+    <item>
+      <procudt_id>0</procudt_id>
+      <custom_id>8</custom_id>
+      <model_id>13</model_id>
+      <user_control>0</user_control>
+      <center_type>0</center_type>
+      <name>NTP</name>
+      <show>NTP</show>
+      <enable>0</enable>
+      <version>4.2.8p9-0</version>
+      <date>20170217</date>
+      <inst_date/>
+      <path/>
+      <ps_name/>
+      <url>index.html</url>
+      <url_port>80</url_port>
+      <apkg_version>2</apkg_version>
+      <packager>rusatch</packager>
+      <email>rusatch@mail.ru</email>
+      <homepage/>
+      <inst_depend/>
+      <inst_conflict/>
+      <start_depend/>
+      <start_conflict/>
+      <description>The ntpd program is an operating-system daemon that sets and maintains a computer system's system time in synchronization with Internet-standard time servers.</description>
+      <icon/>
+    </item>
+  </apkg>
+</config>
