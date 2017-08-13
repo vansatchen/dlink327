@@ -6,13 +6,13 @@
       <name>Domoticz</name>
       <category>IoT</category>
       <description>Domoticz is a very light weight home automation system that lets you monitor and configure various devices like: lights, switches, various sensors/meters like temperature, rainfall, wind, Ultraviolet (UV) radiation, electricity usage/production, gas consumption, water consumption and many more. Notifications/alerts can be sent to any mobile device.</description>
-      <version>Version: 3.8094-0</version>
-      <update>Update: 2017/07/18</update>
-      <size>Size: 13.63 MB</size>
+      <version>Version: 3.8284-0</version>
+      <update>Update: 2017/08/13</update>
+      <size>Size: 13.90 MB</size>
       <developer>Developer: </developer>
       <website>https://domoticz.com</website>
       <forum/>
-      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L Domoticz Package v3.8094-0_07182017</platform>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L Domoticz Package v3.8284-0_08132017</platform>
       <screenshot>Domoticz-s.png</screenshot>
     </item>
   </apkg>
