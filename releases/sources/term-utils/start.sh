@@ -18,5 +18,6 @@ ln -s $path/bin/tmux /bin/
 ln -s $path/bin/nmon /bin/
 ln -s $path/bin/saidar /bin/
 ln -s $path/bin/ncdu /bin/
+ln -s $path/bin/tree /bin/
 
 exit 0

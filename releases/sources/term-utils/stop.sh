@@ -17,5 +17,6 @@
 [ -f /bin/nmon ] && rm -f /bin/nmon
 [ -f /bin/saidar ] && rm -f /bin/saidar
 [ -f /bin/ncdu ] && rm -f /bin/ncdu
+[ -f /bin/tree ] && rm -f /bin/tree
 
 exit 0
