@@ -1,0 +1,19 @@
+Package:          Mosquitto
+Section:          network
+Version:          1.4.14-1
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         https://mosquitto.org
+AddonShowName:    Mosquitto
+AddonIndexPage:   NULL
+AddonUsedPort:     
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      Message broker that implements the MQTT protocol versions 3.1 and 3.1.1.
+Category:         network
+Screenshot:       
+Website:
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: The MQTT protocol provides a lightweight method of carrying out messaging using a publish/subscribe model.

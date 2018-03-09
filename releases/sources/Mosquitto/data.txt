@@ -1,0 +1,1 @@
+bin/mosquitto_pub -m '{ "command": "switchlight", "idx" : 28, "switchcmd": "Off" }' -t domoticz/in
