@@ -10,13 +10,13 @@
       <name>Mosquitto</name>
       <show>Mosquitto</show>
       <enable>0</enable>
-      <version>1.4.14-1</version>
-      <date>20180309</date>
+      <version>1.4.15-1</version>
+      <date>20180320</date>
       <inst_date/>
       <path/>
       <ps_name/>
-      <url>NULL</url>
-      <url_port/>
+      <url>index.html</url>
+      <url_port>80</url_port>
       <apkg_version>2</apkg_version>
       <packager>rusatch</packager>
       <email>rusatch@mail.ru</email>

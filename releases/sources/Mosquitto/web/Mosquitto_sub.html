@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title></title>	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+<link rel="stylesheet" type="text/css" href="/web/css/style.css">
+<link rel="stylesheet" type="text/css" href="/web/css/button_style.css">
+<link rel="stylesheet" type="text/css" href="/web/css/application.css">
+
+<!-- jQuery lib -->
+<script type="text/javascript" src="./js/jQuery/jquery.js?v=1.6.1"></script>
+
+<!-- jScrollPane 
+<link type="text/css" href="./jquery.jscrollpane.css?v=2.0.0" rel="stylesheet" media="all">
+<link type="text/css" href="./jquery.jscrollpane.custom.css?v=2.0.0" rel="stylesheet" media="all">
+<script type="text/javascript" src="./jquery.mousewheel.js?v=2.0.0"></script>
+<script type="text/javascript" src="./jquery.jscrollpane.js?v=2.0.0"></script>
+-->
+<script>
+var sys_time = (new Date()).getTime();
+document.write("<script language=\"javascript\" src=\"\/web\/function\/function.js?id="+sys_time+"\"><\/script>");    
+document.write("<script language=\"javascript\" src=\"\/web\/function\/init.js?id="+sys_time+"\"><\/script>"); 
+document.write("<script language=\"javascript\" src=\"\/web\/function\/web_security.js?id="+sys_time+"\"><\/script>");
+document.write("<script language=\"javascript\" src=\".\/js/Mosquitto.js?id="+sys_time+"\"><\/script>");	
+</script>
+<script type="text/javascript">
+	
+$(document).ready(function(){
+    get_Mosquitto_info();
+    //check_button();
+    
+//  jScrollPane_resize("#my_scroll");
+//	$('#my_scroll').jScrollPane({showArrows:true, scrollbarWidth: 15, arrowSize: 16});	
+	
+	$("#But_WEB_IF").click(function(){
+		
+		//if($("#But_WEB_IF").hasClass("button_medium"))
+			goto_url();
+	})	
+});
+</script>
+</head> 
+<body>	
+<FORM name="form1" id="form1" action="#" method=POST>
+
+<div class="osX">
+	<div id="my_scroll">  	
+		
+		
+		<table border="0" width="100%" cellspacing="0" cellpadding="0">
+			<tr id="id_Mosquitto_icon">
+				<td>
+					<table border="0" width="100%" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="16"><div class="arrow_down" id="Mosquitto_icon"></div></td>
+							<td><div class="accordion_title">Mosquitto</div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr><td><hr></td></tr>
+			<tr id="id_Mosquitto_data" class="enable">
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="95%">
+					     <tr>
+							<td colspan="2" height="10">
+								<b>Mosquitto</b> is an open source (EPL/EDL licensed) message broker that implements the MQTT protocol versions 3.1 and 3.1.1. <b>Mosquitto</b> is lightweight and is suitable for use on all devices from low power single board computers to full servers.<br >
+								<br >
+								<b>MQTT</b> protocol provides a lightweight method of carrying out messaging using a publish/subscribe model. This makes it suitable for Internet of Things messaging such as with low power sensors or mobile devices such as phones, embedded computers or microcontrollers.
+								<br ><br >
+								<b>Defaults:</b><ul>
+								<li><b>Port to connect for clients:</b> 1883</li>
+								<li><b>WebSockets Port:</b> 9001</li>
+								<li>Login and password is blank</li>
+								</ul>
+							</td>
+						</tr>	
+					    <tr><td colspan="2" height="10">&nbsp;</td></tr>	
+					    <tr>
+					    	<td colspan="2">
+						    	<table cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="300"  border="0">
+								<tr>
+									<td height="22" width="100">Installation Date</td>
+									<td height="22"><div id="my_date"></td>
+								</tr>
+								<tr>
+									<td height="22" width="100">Version</td>
+									<td height="22"><div id="my_version"></td>
+								</tr>
+								<tr>
+									<td height="22" width="100">Installation Path</td>
+									<td height="22"><div id="my_path"></td>
+								</tr>
+								</table>
+							</td>
+						</tr>
+						<tr><td colspan="2" height="10">&nbsp;</td></tr>	
+					   	<tr id="chamber1" style="display">    
+							<td>
+								<div id="But_WEB_IF" class="button_medium">Simple WEB-client</div>
+							</td>
+							<td>&nbsp;</td>
+					 	</tr>
+					</table>
+				</td>	
+			</tr>
+		</table>
+		
+	</div><!-- end of my_scroll -->
+</div><!-- end of osX -->
+
+</form>	
+</body>
+</html>
