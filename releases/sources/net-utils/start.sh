@@ -13,6 +13,11 @@ ln -s $path/bin/ngrep /bin/
 ln -s $path/bin/netcat /bin/
 ln -s $path/bin/netcat /bin/nc
 ln -s $path/bin/fping /bin/
+ln -s $path/bin/snmpwalk /bin/
+ln -s $path/bin/snmpget /bin/
+
+export MIBDIRS=$path/share/mibs
+export SNMPCONFPATH=$path/etc/snmp
 
 exit 0
 
