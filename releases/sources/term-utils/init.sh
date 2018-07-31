@@ -25,6 +25,7 @@ done
 [ -f /bin/saidar ] && rm -f /bin/saidar
 [ -f /bin/ncdu ] && rm -f /bin/ncdu
 [ -f /bin/tree ] && rm -f /bin/tree
+[ -f /bin/pushbullet ] && rm -f /bin/pushbullet
 
 ln -s $path/web /var/www/term-utils
 

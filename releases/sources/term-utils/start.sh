@@ -19,5 +19,6 @@ ln -s $path/bin/nmon /bin/
 ln -s $path/bin/saidar /bin/
 ln -s $path/bin/ncdu /bin/
 ln -s $path/bin/tree /bin/
+ln -s $path/bin/pushbullet /bin/
 
 exit 0
