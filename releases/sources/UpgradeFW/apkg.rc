@@ -1,0 +1,19 @@
+Package:          UpgradeFW
+Section:          network
+Version:          0.1-1
+Packager:         rusatch
+Email:            rusatch@mail.ru
+Homepage:         
+AddonShowName:    UpgradeFW
+AddonIndexPage:   
+AddonUsedPort:    80
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      Simple php-script to help OTA upgrade on devices like arduino, esp8266, esp32 and other.
+Category:         network
+Screenshot:       UpgradeFW-s.png
+Website:          
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: Simple php-script to help OTA upgrade on devices like arduino, esp8266, esp32 and other.

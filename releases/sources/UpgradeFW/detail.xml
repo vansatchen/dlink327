@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <apkg>
+    <item>
+      <show>UpgradeFW</show>
+      <name>UpgradeFW</name>
+      <category>network</category>
+      <description>Simple php-script to help OTA upgrade on devices like arduino, esp8266, esp32 and other.</description>
+      <version>Version: 0.1-1</version>
+      <update>Update: 2019/06/03</update>
+      <size>Size: 0.01 MB</size>
+      <developer>Developer: </developer>
+      <website/>
+      <forum/>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L UpgradeFW Package v0.1-1_06032019</platform>
+      <screenshot>UpgradeFW-s.png</screenshot>
+    </item>
+  </apkg>
+</config>
