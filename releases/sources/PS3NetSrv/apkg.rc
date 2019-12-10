@@ -1,0 +1,19 @@
+Package:          PS3NetSrv
+Section:          network
+Version:          1.46-0
+Packager:         rusatch
+Email:            rusatch@gmail.com
+Homepage:         
+AddonShowName:    PS3NetSrv
+AddonIndexPage:   NULL
+AddonUsedPort:    
+InstDepend:
+InstConflict:             
+StartDepend:       
+StartConflict:
+Description:      PS3 Net Server
+Category:         network
+Screenshot:       
+Website:          
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: PS3 Net Server
