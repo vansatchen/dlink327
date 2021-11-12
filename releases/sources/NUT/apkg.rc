@@ -1,0 +1,19 @@
+Package:          NUT
+Section:          system
+Version:          2.7.4-0
+Packager:         rusatch
+Email:            rusatch@gmail.com
+Homepage:
+AddonShowName:    NUT
+AddonIndexPage:   NULL
+AddonUsedPort:
+InstDepend:
+InstConflict:
+StartDepend:
+StartConflict:
+Description:      Network UPS Tools
+Category:         system
+Screenshot:
+Website:
+Platform:         http://storage.dlink.com.tw/addon/
+DescriptionOnline: Network UPS Tools

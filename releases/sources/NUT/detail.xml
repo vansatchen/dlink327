@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <apkg>
+    <item>
+      <show>NUT</show>
+      <name>NUT</name>
+      <category>system</category>
+      <description>Network UPS Tools</description>
+      <version>Version: 2.7.4-0</version>
+      <update>Update: 2021/11/13</update>
+      <size>Size: 2.03 MB</size>
+      <developer>Developer: </developer>
+      <website/>
+      <forum/>
+      <platform>http://storage.dlink.com.tw/addon/327L/DNS-327L NUT Package v2.7.4-0_11132021</platform>
+      <screenshot/>
+    </item>
+  </apkg>
+</config>
